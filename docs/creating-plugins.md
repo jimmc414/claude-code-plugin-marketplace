@@ -2,13 +2,49 @@
 
 This guide walks you through creating Claude Code plugins for the marketplace.
 
+## The Easy Way: Use plugin-publisher
+
+Already have skills, agents, or hooks installed locally? The **plugin-publisher** plugin automates the entire process:
+
+```bash
+# Install the publisher
+/plugin install plugin-publisher@community-claude-plugins
+```
+
+Then just tell Claude:
+```
+"I want to share my skills with the community"
+```
+
+Claude will:
+1. **Scan** your `~/.claude/` installation for components
+2. **Package** your selected skills/agents/hooks into a properly structured plugin
+3. **Submit** a PR to the marketplace automatically
+
+No need to understand plugin structure, manifests, or GitHub workflows - it's all handled for you.
+
+**Components:**
+| Agent | Purpose |
+|-------|---------|
+| `plugin-scanner` | Inventories your local skills, agents, commands, and hooks |
+| `plugin-packager` | Creates plugin structure, fixes hardcoded paths, generates README |
+| `plugin-submitter` | Forks repo, commits, creates PR via GitHub CLI |
+
+See the [plugin-publisher README](../plugins/plugin-publisher/README.md) for full details.
+
+---
+
+## The Manual Way: Build from Scratch
+
+If you're creating a new plugin from scratch (not packaging existing components), follow this guide.
+
 ## Quick Start
 
 ### 1. Clone the Marketplace
 
 ```bash
-git clone https://github.com/yourname/claude-code-marketplace.git
-cd claude-code-marketplace
+git clone https://github.com/jimmc414/claude-code-plugin-marketplace.git
+cd claude-code-plugin-marketplace
 ```
 
 ### 2. Scaffold a New Plugin
