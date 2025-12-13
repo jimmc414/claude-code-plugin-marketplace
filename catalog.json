@@ -1,7 +1,7 @@
 {
-  "generated_at": "2025-12-13T05:58:28.138096Z",
+  "generated_at": "2025-12-13T07:17:07.828852Z",
   "marketplace_name": "community-claude-plugins",
-  "total_plugins": 1,
+  "total_plugins": 2,
   "verified_plugins": 0,
   "plugins": [
     {
@@ -27,9 +27,36 @@
       "source_url": "./plugins/example-deployment",
       "dependencies": {},
       "verified": false
+    },
+    {
+      "name": "parallel-workflows",
+      "version": "1.0.0",
+      "description": "Parallel workflow orchestration using git worktrees for concurrent Claude Code sessions",
+      "author": "jimmc414",
+      "category": "development",
+      "keywords": [
+        "parallel",
+        "worktrees",
+        "git",
+        "orchestration",
+        "concurrent",
+        "workflow"
+      ],
+      "components": {
+        "commands": 0,
+        "agents": 3,
+        "skills": 3,
+        "hooks": false,
+        "mcp_servers": 0
+      },
+      "install_command": "/plugin install parallel-workflows@community-claude-plugins",
+      "source_url": "./plugins/parallel-workflows",
+      "dependencies": {},
+      "verified": false
     }
   ],
   "categories": {
-    "devops": 1
+    "devops": 1,
+    "development": 1
   }
 }

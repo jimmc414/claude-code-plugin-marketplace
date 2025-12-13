@@ -1,0 +1,20 @@
+{
+  "name": "parallel-workflows",
+  "version": "1.0.0",
+  "description": "Parallel workflow orchestration using git worktrees for concurrent Claude Code sessions",
+  "author": {
+    "name": "jimmc414",
+    "email": "jimmc414@gmail.com"
+  },
+  "homepage": "https://github.com/jimmc414/claude-code-plugin-marketplace/tree/main/plugins/parallel-workflows",
+  "repository": "https://github.com/jimmc414/claude-code-plugin-marketplace",
+  "license": "MIT",
+  "keywords": ["parallel", "worktrees", "git", "orchestration", "concurrent", "workflow"],
+  "category": "development",
+  "dependencies": {},
+  "commands": "./commands/",
+  "agents": "./agents/",
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": "./.mcp.json"
+}
