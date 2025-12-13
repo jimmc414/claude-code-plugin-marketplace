@@ -1,0 +1,32 @@
+{
+  "name": "community-claude-plugins",
+  "version": "1.0.0",
+  "metadata": {
+    "description": "Community-maintained Claude Code plugin marketplace",
+    "documentation": "https://github.com/yourname/claude-code-marketplace",
+    "pluginRoot": "./plugins"
+  },
+  "owner": {
+    "name": "Claude Code Community",
+    "email": "plugins@example.com",
+    "url": "https://github.com/yourname/claude-code-marketplace"
+  },
+  "plugins": [
+    {
+      "name": "example-deployment",
+      "source": "./plugins/example-deployment",
+      "version": "1.0.0",
+      "description": "Deployment automation tools for common platforms",
+      "keywords": ["deploy", "ci-cd", "docker", "automation"],
+      "category": "devops"
+    }
+  ],
+  "categories": [
+    "devops",
+    "development",
+    "security",
+    "testing",
+    "documentation",
+    "utilities"
+  ]
+}

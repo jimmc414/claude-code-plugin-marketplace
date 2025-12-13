@@ -1,0 +1,35 @@
+{
+  "generated_at": "2025-12-13T05:58:28.138096Z",
+  "marketplace_name": "community-claude-plugins",
+  "total_plugins": 1,
+  "verified_plugins": 0,
+  "plugins": [
+    {
+      "name": "example-deployment",
+      "version": "1.0.0",
+      "description": "Deployment automation tools for common platforms",
+      "author": "Marketplace Team",
+      "category": "devops",
+      "keywords": [
+        "deploy",
+        "ci-cd",
+        "docker",
+        "kubernetes"
+      ],
+      "components": {
+        "commands": 2,
+        "agents": 1,
+        "skills": 1,
+        "hooks": true,
+        "mcp_servers": 0
+      },
+      "install_command": "/plugin install example-deployment@community-claude-plugins",
+      "source_url": "./plugins/example-deployment",
+      "dependencies": {},
+      "verified": false
+    }
+  ],
+  "categories": {
+    "devops": 1
+  }
+}

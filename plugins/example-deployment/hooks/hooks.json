@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "description": "Log deployment commands for audit trail",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/log-command.sh",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

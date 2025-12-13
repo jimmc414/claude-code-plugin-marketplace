@@ -1,0 +1,38 @@
+name: Publish Catalog
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight UTC
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate all plugins
+        run: python tools/validate.py --all
+
+      - name: Generate catalog
+        run: python tools/generate_catalog.py
+
+      - name: Upload catalog artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog
+          path: catalog.json
+
+      - name: Commit if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add catalog.json
+          git diff --staged --quiet || git commit -m "Update plugin catalog [skip ci]"
+          git push

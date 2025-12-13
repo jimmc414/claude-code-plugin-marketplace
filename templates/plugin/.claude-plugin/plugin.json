@@ -1,0 +1,20 @@
+{
+  "name": "{{PLUGIN_NAME}}",
+  "version": "1.0.0",
+  "description": "{{PLUGIN_DESCRIPTION}}",
+  "author": {
+    "name": "{{AUTHOR_NAME}}",
+    "email": "{{AUTHOR_EMAIL}}"
+  },
+  "homepage": "{{HOMEPAGE_URL}}",
+  "repository": "{{REPOSITORY_URL}}",
+  "license": "MIT",
+  "keywords": [],
+  "category": "utilities",
+  "dependencies": {},
+  "commands": "./commands/",
+  "agents": "./agents/",
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": "./.mcp.json"
+}

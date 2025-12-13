@@ -1,0 +1,80 @@
+name: Plugin Submission
+description: Submit a new plugin to the marketplace
+title: "[Plugin] "
+labels: ["plugin-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting a plugin to the Claude Code marketplace!
+
+  - type: input
+    id: plugin-name
+    attributes:
+      label: Plugin Name
+      description: The name of your plugin (lowercase, hyphens only)
+      placeholder: my-awesome-plugin
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What does your plugin do?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - devops
+        - development
+        - security
+        - testing
+        - documentation
+        - utilities
+    validations:
+      required: true
+
+  - type: input
+    id: repository
+    attributes:
+      label: Source Repository
+      description: URL to your plugin repository
+      placeholder: https://github.com/username/plugin-repo
+    validations:
+      required: true
+
+  - type: textarea
+    id: components
+    attributes:
+      label: Components Included
+      description: What components does your plugin include?
+      placeholder: |
+        - Commands: /deploy, /status
+        - Skills: docker-deploy
+        - Agents: deployer
+        - Hooks: Yes (audit logging)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Submission Checklist
+      options:
+        - label: Plugin has a valid plugin.json
+          required: true
+        - label: Plugin passes validation (python tools/validate.py)
+          required: true
+        - label: Plugin has a README.md
+          required: true
+        - label: Plugin has a LICENSE file
+          required: true
+        - label: I have tested the plugin locally
+          required: true
+        - label: Plugin contains no secrets or credentials
+          required: true

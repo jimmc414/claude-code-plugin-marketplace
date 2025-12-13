@@ -1,0 +1,19 @@
+{
+  "name": "example-deployment",
+  "version": "1.0.0",
+  "description": "Deployment automation tools for common platforms",
+  "author": {
+    "name": "Marketplace Team",
+    "email": "team@example.com"
+  },
+  "homepage": "https://github.com/yourname/claude-code-marketplace/tree/main/plugins/example-deployment",
+  "repository": "https://github.com/yourname/claude-code-marketplace",
+  "license": "MIT",
+  "keywords": ["deploy", "ci-cd", "docker", "kubernetes"],
+  "category": "devops",
+  "dependencies": {},
+  "commands": "./commands/",
+  "agents": "./agents/",
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json"
+}
