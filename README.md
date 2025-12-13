@@ -295,5 +295,5 @@ This marketplace and included plugins are licensed under MIT unless otherwise sp
 ## Links
 
 - [Claude Code Documentation](https://docs.anthropic.com/claude-code)
-- [Plugin System Guide](https://docs.anthropic.com/claude-code/plugins)
+- [Plugin System Guide](https://code.claude.com/docs/en/plugins)
 - [Report Issues](https://github.com/jimmc414/claude-code-plugin-marketplace/issues)
