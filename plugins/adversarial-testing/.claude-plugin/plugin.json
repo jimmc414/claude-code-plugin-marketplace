@@ -1,0 +1,20 @@
+{
+  "name": "adversarial-testing",
+  "version": "1.0.0",
+  "description": "Adversarial test generation that finds real bugs by inverting the reward structure",
+  "author": {
+    "name": "jimmc414",
+    "email": "jimmc414@gmail.com"
+  },
+  "homepage": "https://github.com/jimmc414/claude-code-plugin-marketplace/tree/main/plugins/adversarial-testing",
+  "repository": "https://github.com/jimmc414/claude-code-plugin-marketplace",
+  "license": "MIT",
+  "keywords": ["testing", "adversarial", "bugs", "mutation", "quality", "pytest"],
+  "category": "testing",
+  "dependencies": {},
+  "commands": "./commands/",
+  "agents": "./agents/",
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": "./.mcp.json"
+}

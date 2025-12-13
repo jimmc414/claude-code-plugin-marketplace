@@ -1,9 +1,35 @@
 {
-  "generated_at": "2025-12-13T07:21:39.851491Z",
+  "generated_at": "2025-12-13T07:42:21.055175Z",
   "marketplace_name": "community-claude-plugins",
-  "total_plugins": 3,
+  "total_plugins": 4,
   "verified_plugins": 0,
   "plugins": [
+    {
+      "name": "adversarial-testing",
+      "version": "1.0.0",
+      "description": "Adversarial test generation that finds real bugs by inverting the reward structure",
+      "author": "jimmc414",
+      "category": "testing",
+      "keywords": [
+        "testing",
+        "adversarial",
+        "bugs",
+        "mutation",
+        "quality",
+        "pytest"
+      ],
+      "components": {
+        "commands": 0,
+        "agents": 3,
+        "skills": 2,
+        "hooks": false,
+        "mcp_servers": 0
+      },
+      "install_command": "/plugin install adversarial-testing@community-claude-plugins",
+      "source_url": "./plugins/adversarial-testing",
+      "dependencies": {},
+      "verified": false
+    },
     {
       "name": "example-deployment",
       "version": "1.0.0",
@@ -83,6 +109,7 @@
     }
   ],
   "categories": {
+    "testing": 1,
     "devops": 1,
     "development": 2
   }

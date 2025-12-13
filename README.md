@@ -64,6 +64,31 @@ Manage local Ollama LLM models for development and testing.
 
 ---
 
+### adversarial-testing
+**Category:** testing | **Version:** 1.0.0
+
+Adversarial test generation that finds real bugs by inverting the reward structure. Instead of rewarding passing tests, rewards tests that fail (and prove a bug exists).
+
+| Type | Name | Description |
+|------|------|-------------|
+| **Skill** | `adversarial-analysis` | Calculate realism bounds (3-sigma), extract contracts, identify vulnerability surfaces |
+| **Skill** | `adversarial-patterns` | Library of attack vectors + anti-patterns to reject (gaming detection) |
+| **Agent** | `adversarial-orchestrator` | Coordinates workflow, max 3 iterations, parses validator results |
+| **Agent** | `adversarial-generator` | Creates candidate tests with documented hypotheses |
+| **Agent** | `adversarial-validator` | 4-phase quality gate: static → dynamic → oracle → mutation |
+
+**Key Features:**
+- 3-sigma constraint prevents reward hacking with extreme inputs
+- Oracle verification ensures failing tests reveal real bugs
+- Mutation testing validates passing tests are strong enough
+- Subtle gaming detection (ghost imports, dead asserts, tautologies)
+
+```bash
+/plugin install adversarial-testing@community-claude-plugins
+```
+
+---
+
 ### example-deployment
 **Category:** devops | **Version:** 1.0.0
 
