@@ -1,7 +1,7 @@
 {
-  "generated_at": "2025-12-13T08:06:42.863411Z",
+  "generated_at": "2025-12-13T08:32:32.303647Z",
   "marketplace_name": "community-claude-plugins",
-  "total_plugins": 5,
+  "total_plugins": 6,
   "verified_plugins": 0,
   "plugins": [
     {
@@ -27,6 +27,33 @@
       },
       "install_command": "/plugin install adversarial-testing@community-claude-plugins",
       "source_url": "./plugins/adversarial-testing",
+      "dependencies": {},
+      "verified": false
+    },
+    {
+      "name": "doc-linter",
+      "version": "1.0.0",
+      "description": "Validate documentation by simulating a developer with zero project knowledge",
+      "author": "jimmc414",
+      "category": "testing",
+      "keywords": [
+        "documentation",
+        "readme",
+        "onboarding",
+        "setup",
+        "testing",
+        "validation",
+        "linting"
+      ],
+      "components": {
+        "commands": 0,
+        "agents": 1,
+        "skills": 1,
+        "hooks": false,
+        "mcp_servers": 0
+      },
+      "install_command": "/plugin install doc-linter@community-claude-plugins",
+      "source_url": "./plugins/doc-linter",
       "dependencies": {},
       "verified": false
     },
@@ -136,7 +163,7 @@
     }
   ],
   "categories": {
-    "testing": 1,
+    "testing": 2,
     "devops": 1,
     "development": 2,
     "utilities": 1

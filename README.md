@@ -137,6 +137,28 @@ Adversarial test generation that finds real bugs by inverting the reward structu
 
 ---
 
+### doc-linter
+**Category:** testing | **Version:** 1.0.0
+
+Validate documentation by simulating a developer with zero project knowledge. Catches documentation rot before it frustrates new team members.
+
+| Type | Name | Description |
+|------|------|-------------|
+| **Skill** | `documentation-testing` | Heuristics for identifying incomplete or broken documentation |
+| **Agent** | `new-hire` | Blindfolded validator that can only read docs, not source code |
+
+**Key Features:**
+- Agent is forbidden from reading source code (can't cheat)
+- Executes setup steps exactly as written
+- Reports failures as documentation bugs, not code bugs
+- Perfect for CI/CD documentation validation
+
+```bash
+/plugin install doc-linter@community-claude-plugins
+```
+
+---
+
 ### example-deployment
 **Category:** devops | **Version:** 1.0.0
 

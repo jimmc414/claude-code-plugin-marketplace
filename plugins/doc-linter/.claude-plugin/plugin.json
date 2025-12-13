@@ -1,0 +1,23 @@
+{
+  "name": "doc-linter",
+  "version": "1.0.0",
+  "description": "Validate documentation by simulating a developer with zero project knowledge",
+  "author": {
+    "name": "jimmc414",
+    "email": "jimmc414@gmail.com"
+  },
+  "keywords": [
+    "documentation",
+    "readme",
+    "onboarding",
+    "setup",
+    "testing",
+    "validation",
+    "linting"
+  ],
+  "category": "testing",
+  "repository": "https://github.com/jimmc414/claude-code-plugin-marketplace",
+  "license": "MIT",
+  "agents": "./agents/",
+  "skills": "./skills/"
+}
