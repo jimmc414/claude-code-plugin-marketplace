@@ -74,3 +74,6 @@ temp/
 
 # Archive (historical files no longer needed)
 archive/
+
+# Claude Code operator cheatsheet (local only)
+CLAUDE.md
