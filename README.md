@@ -24,7 +24,55 @@ A community-maintained marketplace for Claude Code plugins, skills, agents, and 
 
 ---
 
+## Share Your Skills with the Community
+
+Have skills, agents, or hooks you want to share? The **plugin-publisher** plugin automates the entire contribution workflow:
+
+```bash
+# Install the publisher
+/plugin install plugin-publisher@community-claude-plugins
+```
+
+Then just ask Claude:
+```
+"I want to share my skills with the community"
+```
+
+Claude will:
+1. **Scan** your `~/.claude/` installation for components
+2. **Package** your selected skills/agents/hooks into a plugin
+3. **Submit** a PR to the marketplace automatically
+
+No need to understand plugin structure, manifests, or GitHub workflows - it's all handled for you.
+
+See [plugin-publisher](#plugin-publisher) below for details.
+
+---
+
 ## Available Plugins
+
+### plugin-publisher
+**Category:** utilities | **Version:** 1.0.0
+
+Extract local skills, agents, and hooks and publish them to plugin marketplaces with guided assistance.
+
+| Type | Name | Description |
+|------|------|-------------|
+| **Skill** | `plugin-publishing` | Knowledge layer for Claude Code paths, plugin formats, marketplace requirements |
+| **Agent** | `plugin-scanner` | Scans local installation to inventory all skills, agents, commands, hooks |
+| **Agent** | `plugin-packager` | Creates plugin structure from selected components, generates metadata |
+| **Agent** | `plugin-submitter` | Handles GitHub fork/branch/PR workflow to submit to marketplaces |
+
+**Workflow:**
+```
+Scan Installation → Select Components → Package Plugin → Submit PR
+```
+
+```bash
+/plugin install plugin-publisher@community-claude-plugins
+```
+
+---
 
 ### parallel-workflows
 **Category:** development | **Version:** 1.0.0
@@ -118,9 +166,24 @@ This marketplace provides:
 - **Hooks**: Event-driven automation for tool calls and prompts
 - **Import/Export Tools**: Share and reuse components across projects
 
-## Creating Plugins
+## Contributing Your Own Plugins
 
-Want to contribute a plugin? Start here:
+### The Easy Way: Use plugin-publisher
+
+Install the plugin-publisher and let Claude do the work:
+
+```bash
+/plugin install plugin-publisher@community-claude-plugins
+```
+
+Then:
+```
+"Help me share my deployment tools with the community"
+```
+
+Claude will scan your installation, package your components, and submit a PR.
+
+### The Manual Way: Use the Python Tools
 
 ```bash
 # Clone the repository
@@ -189,6 +252,12 @@ We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guideline
 
 ### Quick Contribution Steps
 
+**Option 1: Automated (Recommended)**
+1. Install plugin-publisher: `/plugin install plugin-publisher@community-claude-plugins`
+2. Tell Claude: "I want to share my skills"
+3. Follow the guided workflow
+
+**Option 2: Manual**
 1. Fork the repository
 2. Create your plugin or improvement
 3. Run validation: `python tools/validate.py --all`

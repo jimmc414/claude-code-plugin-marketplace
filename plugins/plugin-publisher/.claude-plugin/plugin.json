@@ -1,0 +1,17 @@
+{
+  "name": "plugin-publisher",
+  "version": "1.0.0",
+  "description": "Extract local skills, agents, and hooks and publish them to plugin marketplaces",
+  "author": {
+    "name": "jimmc414",
+    "email": "jimmc414@gmail.com"
+  },
+  "homepage": "https://github.com/jimmc414/claude-code-plugin-marketplace/tree/main/plugins/plugin-publisher",
+  "repository": "https://github.com/jimmc414/claude-code-plugin-marketplace",
+  "license": "MIT",
+  "keywords": ["publish", "export", "import", "share", "marketplace", "contribution", "packaging"],
+  "category": "utilities",
+  "dependencies": {},
+  "agents": "./agents/",
+  "skills": "./skills/"
+}
