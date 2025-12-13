@@ -1,0 +1,39 @@
+# Reasoning Model Template
+# Optimized for quality E2E validation with chain-of-thought
+# Expected speed: 5-15 tok/s depending on GPU
+#
+# Usage:
+#   ollama create my-reasoning-model -f reasoning-model.Modelfile
+
+FROM deepseek-r1:8b
+
+# DeepSeek R1 recommended inference parameters
+PARAMETER temperature 0.6
+PARAMETER top_p 0.95
+PARAMETER min_p 0.01
+
+# Context window (balance VRAM and capability)
+PARAMETER num_ctx 8192
+
+# Repetition control
+PARAMETER repeat_penalty 1.1
+PARAMETER repeat_last_n 64
+
+# Stop sequences for R1 format
+PARAMETER stop "<|end▁of▁sentence|>"
+PARAMETER stop "<|User|>"
+PARAMETER stop "<|Assistant|>"
+
+# System prompt for complex reasoning tasks
+SYSTEM """You are an expert assistant with expertise in:
+- Complex multi-step reasoning and problem decomposition
+- Generating and validating hypotheses
+- Analyzing data and documentation
+- Writing and reviewing code
+- Structured output generation (JSON, artifacts)
+
+When reasoning through complex problems:
+1. Think step-by-step and show your chain of thought
+2. Consider multiple approaches before choosing one
+3. Validate your reasoning against known facts
+4. Be precise, thorough, and cite your reasoning"""

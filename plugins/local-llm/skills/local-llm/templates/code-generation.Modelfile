@@ -1,0 +1,31 @@
+# Code Generation Model Template
+# Optimized for generating clean, working code
+# Best for: Implementation tasks, code completion, debugging
+#
+# Usage:
+#   ollama create code-gen -f code-generation.Modelfile
+
+FROM qwen3:4b
+
+# Lower temperature for more deterministic code output
+PARAMETER temperature 0.3
+PARAMETER top_p 0.9
+PARAMETER top_k 40
+PARAMETER num_ctx 8192
+
+# Strong repetition penalty for code
+PARAMETER repeat_penalty 1.2
+PARAMETER repeat_last_n 128
+
+SYSTEM """You are an expert programmer. When writing code:
+
+1. Write clean, readable, well-documented code
+2. Follow language-specific best practices and conventions
+3. Include error handling where appropriate
+4. Use meaningful variable and function names
+5. Keep functions focused and modular
+
+Output format:
+- Provide code in markdown code blocks with language tags
+- Include brief comments explaining complex logic
+- If asked to fix code, show only the changed portions unless full context is needed"""

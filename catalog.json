@@ -1,7 +1,7 @@
 {
-  "generated_at": "2025-12-13T07:17:07.828852Z",
+  "generated_at": "2025-12-13T07:21:39.851491Z",
   "marketplace_name": "community-claude-plugins",
-  "total_plugins": 2,
+  "total_plugins": 3,
   "verified_plugins": 0,
   "plugins": [
     {
@@ -25,6 +25,33 @@
       },
       "install_command": "/plugin install example-deployment@community-claude-plugins",
       "source_url": "./plugins/example-deployment",
+      "dependencies": {},
+      "verified": false
+    },
+    {
+      "name": "local-llm",
+      "version": "1.0.0",
+      "description": "Manage local Ollama LLM models for development and testing",
+      "author": "jimmc414",
+      "category": "development",
+      "keywords": [
+        "ollama",
+        "llm",
+        "local",
+        "gpu",
+        "vram",
+        "modelfile",
+        "inference"
+      ],
+      "components": {
+        "commands": 0,
+        "agents": 1,
+        "skills": 1,
+        "hooks": false,
+        "mcp_servers": 0
+      },
+      "install_command": "/plugin install local-llm@community-claude-plugins",
+      "source_url": "./plugins/local-llm",
       "dependencies": {},
       "verified": false
     },
@@ -57,6 +84,6 @@
   ],
   "categories": {
     "devops": 1,
-    "development": 1
+    "development": 2
   }
 }

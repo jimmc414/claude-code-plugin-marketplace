@@ -1,0 +1,20 @@
+{
+  "name": "local-llm",
+  "version": "1.0.0",
+  "description": "Manage local Ollama LLM models for development and testing",
+  "author": {
+    "name": "jimmc414",
+    "email": "jimmc414@gmail.com"
+  },
+  "homepage": "https://github.com/jimmc414/claude-code-plugin-marketplace/tree/main/plugins/local-llm",
+  "repository": "https://github.com/jimmc414/claude-code-plugin-marketplace",
+  "license": "MIT",
+  "keywords": ["ollama", "llm", "local", "gpu", "vram", "modelfile", "inference"],
+  "category": "development",
+  "dependencies": {},
+  "commands": "./commands/",
+  "agents": "./agents/",
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": "./.mcp.json"
+}

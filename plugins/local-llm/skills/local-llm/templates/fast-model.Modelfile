@@ -1,0 +1,22 @@
+# Fast Model Template
+# Optimized for rapid iteration and sanity testing
+# Expected speed: 30-50 tok/s depending on GPU
+#
+# Usage:
+#   ollama create my-fast-model -f fast-model.Modelfile
+
+FROM qwen2.5:3b
+
+# Speed-optimized parameters
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9
+PARAMETER num_ctx 8192
+
+# Reduce repetition
+PARAMETER repeat_penalty 1.1
+PARAMETER repeat_last_n 64
+
+# System prompt - customize for your use case
+SYSTEM """You are a helpful AI assistant optimized for fast responses.
+Be concise and direct. Focus on accuracy over elaboration.
+When generating code, include only the essential implementation."""

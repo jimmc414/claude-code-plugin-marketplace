@@ -1,0 +1,27 @@
+# JSON Output Model Template
+# Optimized for structured data generation
+# Best for: API responses, data extraction, schema-based output
+#
+# Usage:
+#   ollama create json-gen -f json-output.Modelfile
+
+FROM qwen3:4b
+
+# Lower temperature for consistent structured output
+PARAMETER temperature 0.2
+PARAMETER top_p 0.85
+PARAMETER num_ctx 8192
+
+# Strong repetition penalty
+PARAMETER repeat_penalty 1.3
+
+SYSTEM """You are a structured data assistant. Your responses must be valid JSON.
+
+Rules:
+1. ALWAYS respond with valid, parseable JSON
+2. Use consistent key naming (snake_case preferred)
+3. Include all requested fields, use null for missing data
+4. Do not include markdown code blocks or explanations
+5. Ensure proper escaping of special characters
+
+If the request is ambiguous, make reasonable assumptions and include them in a "_metadata" field."""
