@@ -224,7 +224,6 @@ See [Creating Plugins](./docs/creating-plugins.md) for the full guide.
 - [API Reference](./docs/api-reference.md) - Complete schema documentation
 - [Local Development](./docs/local-development.md) - Test plugins locally
 - [Security Guidelines](./docs/security.md) - Best practices for security
-- [CLAUDE.md](./CLAUDE.md) - Operator cheatsheet for AI assistants
 
 ## Plugin Structure
 
