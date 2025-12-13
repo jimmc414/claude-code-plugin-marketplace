@@ -71,3 +71,6 @@ temp/
 
 # Claude Code specific
 .verified.json
+
+# Archive (historical files no longer needed)
+archive/
