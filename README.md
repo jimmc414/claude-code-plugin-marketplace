@@ -159,6 +159,28 @@ Validate documentation by simulating a developer with zero project knowledge. Ca
 
 ---
 
+### error-therapist
+**Category:** development | **Version:** 1.0.0
+
+Audit and rewrite error messages to be helpful and actionable. Transforms cryptic error messages into user-friendly guidance.
+
+| Type | Name | Description |
+|------|------|-------------|
+| **Skill** | `error-ux` | Principles for writing error messages that help users recover |
+| **Agent** | `therapist` | Scans code for error patterns, evaluates clarity/actionability, suggests rewrites |
+
+**Key Features:**
+- Detects error patterns across JS/TS, Python, Go, Java
+- Scores messages on Clarity, Actionability, Specificity (1-5 each)
+- Transforms jargon to plain language
+- Respects security-sensitive errors (keeps auth errors vague)
+
+```bash
+/plugin install error-therapist@community-claude-plugins
+```
+
+---
+
 ### example-deployment
 **Category:** devops | **Version:** 1.0.0
 

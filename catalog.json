@@ -1,7 +1,7 @@
 {
-  "generated_at": "2025-12-13T08:32:32.303647Z",
+  "generated_at": "2025-12-13T08:42:42.307744Z",
   "marketplace_name": "community-claude-plugins",
-  "total_plugins": 6,
+  "total_plugins": 7,
   "verified_plugins": 0,
   "plugins": [
     {
@@ -54,6 +54,33 @@
       },
       "install_command": "/plugin install doc-linter@community-claude-plugins",
       "source_url": "./plugins/doc-linter",
+      "dependencies": {},
+      "verified": false
+    },
+    {
+      "name": "error-therapist",
+      "version": "1.0.0",
+      "description": "Audit and rewrite error messages to be helpful and actionable",
+      "author": "jimmc414",
+      "category": "development",
+      "keywords": [
+        "errors",
+        "ux",
+        "messages",
+        "user-experience",
+        "debugging",
+        "validation",
+        "exceptions"
+      ],
+      "components": {
+        "commands": 0,
+        "agents": 1,
+        "skills": 1,
+        "hooks": false,
+        "mcp_servers": 0
+      },
+      "install_command": "/plugin install error-therapist@community-claude-plugins",
+      "source_url": "./plugins/error-therapist",
       "dependencies": {},
       "verified": false
     },
@@ -164,8 +191,8 @@
   ],
   "categories": {
     "testing": 2,
+    "development": 3,
     "devops": 1,
-    "development": 2,
     "utilities": 1
   }
 }

@@ -1,0 +1,23 @@
+{
+  "name": "error-therapist",
+  "version": "1.0.0",
+  "description": "Audit and rewrite error messages to be helpful and actionable",
+  "author": {
+    "name": "jimmc414",
+    "email": "jimmc414@gmail.com"
+  },
+  "keywords": [
+    "errors",
+    "ux",
+    "messages",
+    "user-experience",
+    "debugging",
+    "validation",
+    "exceptions"
+  ],
+  "category": "development",
+  "repository": "https://github.com/jimmc414/claude-code-plugin-marketplace",
+  "license": "MIT",
+  "agents": "./agents/",
+  "skills": "./skills/"
+}
