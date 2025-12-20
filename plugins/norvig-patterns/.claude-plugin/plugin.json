@@ -1,0 +1,23 @@
+{
+  "name": "norvig-patterns",
+  "description": "54 elegant coding patterns derived from Peter Norvig's pytudes. Guides Claude to write cleaner, more Pythonic code using proven patterns for algorithms, data structures, testing, and code structure.",
+  "version": "1.0.0",
+  "author": {
+    "name": "jimmc414",
+    "attribution": "Patterns derived from Peter Norvig's pytudes (https://github.com/norvig/pytudes)"
+  },
+  "license": "MIT",
+  "keywords": [
+    "python",
+    "patterns",
+    "algorithms",
+    "best-practices",
+    "norvig",
+    "pytudes",
+    "coding-style",
+    "clean-code",
+    "data-structures",
+    "testing",
+    "refactoring"
+  ]
+}

@@ -51,6 +51,35 @@ See [plugin-publisher](#plugin-publisher) below for details.
 
 ## Available Plugins
 
+### norvig-patterns
+**Category:** coding-patterns | **Version:** 1.0.0
+
+54 elegant coding patterns derived from Peter Norvig's pytudes repository. Automatically guides Claude to write cleaner, more Pythonic code.
+
+**54 Skills across 11 Categories:**
+
+| Category | Skills | Examples |
+|----------|--------|----------|
+| Problem-Solving | 8 | `solve-grid-maze`, `find-shortest-path`, `solve-constraint-puzzle` |
+| Data Structures | 6 | `use-sparse-set`, `use-counter-frequency`, `build-priority-queue` |
+| Algorithm Optimization | 5 | `cache-recursive-calls`, `use-generator-lazy`, `propagate-then-search` |
+| Code Structure | 5 | `refactor-decompose-function`, `write-docstring-first`, `compose-small-helpers` |
+| Functional Programming | 5 | `pass-function-as-arg`, `apply-decorator-wrap`, `capture-state-closure` |
+| Metaprogramming | 5 | `build-expression-tree`, `dispatch-on-structure`, `overload-operators-dsl` |
+| Parsing | 4 | `parse-extract-input`, `tokenize-then-parse`, `validate-before-process` |
+| Testing | 5 | `verify-with-inline-tests`, `benchmark-before-optimize`, `test-with-examples` |
+| Error Handling | 4 | `handle-edge-cases`, `return-none-for-failure`, `catch-expected-errors` |
+| Visualization | 4 | `display-grid-state`, `format-statistics-table`, `time-and-report` |
+| State Machines | 3 | `use-class-for-state`, `stack-based-backtrack`, `frontier-based-explore` |
+
+**How it works:** Claude automatically matches your task against skill descriptions and applies relevant patterns.
+
+```bash
+/plugin install norvig-patterns@community-claude-plugins
+```
+
+---
+
 ### plugin-publisher
 **Category:** utilities | **Version:** 1.0.0
 

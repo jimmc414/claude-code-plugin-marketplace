@@ -1,9 +1,40 @@
 {
   "generated_at": "2025-12-20T04:28:39.266687Z",
   "marketplace_name": "community-claude-plugins",
-  "total_plugins": 9,
+  "total_plugins": 10,
   "verified_plugins": 0,
   "plugins": [
+    {
+      "name": "norvig-patterns",
+      "version": "1.0.0",
+      "description": "54 elegant coding patterns derived from Peter Norvig's pytudes. Guides Claude to write cleaner, more Pythonic code using proven patterns for algorithms, data structures, testing, and code structure.",
+      "author": "jimmc414",
+      "category": "coding-patterns",
+      "keywords": [
+        "python",
+        "patterns",
+        "algorithms",
+        "best-practices",
+        "norvig",
+        "pytudes",
+        "coding-style",
+        "clean-code",
+        "data-structures",
+        "testing",
+        "refactoring"
+      ],
+      "components": {
+        "commands": 0,
+        "agents": 0,
+        "skills": 54,
+        "hooks": false,
+        "mcp_servers": 0
+      },
+      "install_command": "/plugin install norvig-patterns@community-claude-plugins",
+      "source_url": "./plugins/norvig-patterns",
+      "dependencies": {},
+      "verified": false
+    },
     {
       "name": "adversarial-testing",
       "version": "1.0.0",
@@ -245,6 +276,7 @@
     "development": 3,
     "devops": 1,
     "utilities": 1,
-    "productivity": 2
+    "productivity": 2,
+    "coding-patterns": 1
   }
 }
