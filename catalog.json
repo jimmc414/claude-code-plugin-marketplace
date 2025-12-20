@@ -1,7 +1,7 @@
 {
-  "generated_at": "2025-12-20T00:33:27.858345Z",
+  "generated_at": "2025-12-20T04:28:39.266687Z",
   "marketplace_name": "community-claude-plugins",
-  "total_plugins": 7,
+  "total_plugins": 9,
   "verified_plugins": 0,
   "plugins": [
     {
@@ -187,12 +187,64 @@
       "source_url": "./plugins/plugin-publisher",
       "dependencies": {},
       "verified": false
+    },
+    {
+      "name": "problem-solving",
+      "version": "1.0.0",
+      "description": "Problem diagnosis and solution generation workflow. Separates problem clarification from solution generation for better outcomes.",
+      "author": "jimmc414",
+      "category": "productivity",
+      "keywords": [
+        "problem",
+        "solution",
+        "diagnosis",
+        "troubleshooting",
+        "decision-making"
+      ],
+      "components": {
+        "commands": 2,
+        "agents": 1,
+        "skills": 0,
+        "hooks": false,
+        "mcp_servers": 0
+      },
+      "install_command": "/plugin install problem-solving@community-claude-plugins",
+      "source_url": "./plugins/problem-solving",
+      "dependencies": {},
+      "verified": false
+    },
+    {
+      "name": "thought-exploration",
+      "version": "1.0.0",
+      "description": "Thought refinement workflow with clarification and Socratic examination. Orchestrates brain dump clarification through rigorous but honest intellectual exploration.",
+      "author": "jimmc414",
+      "category": "productivity",
+      "keywords": [
+        "thinking",
+        "socratic",
+        "clarification",
+        "exploration",
+        "brainstorm",
+        "ideas"
+      ],
+      "components": {
+        "commands": 2,
+        "agents": 1,
+        "skills": 0,
+        "hooks": false,
+        "mcp_servers": 0
+      },
+      "install_command": "/plugin install thought-exploration@community-claude-plugins",
+      "source_url": "./plugins/thought-exploration",
+      "dependencies": {},
+      "verified": false
     }
   ],
   "categories": {
     "testing": 2,
     "development": 3,
     "devops": 1,
-    "utilities": 1
+    "utilities": 1,
+    "productivity": 2
   }
 }
