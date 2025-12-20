@@ -1,0 +1,20 @@
+{
+  "name": "problem-solving",
+  "version": "1.0.0",
+  "description": "Problem diagnosis and solution generation workflow. Separates problem clarification from solution generation for better outcomes.",
+  "author": {
+    "name": "jimmc414",
+    "email": "jimmc414@github.com"
+  },
+  "homepage": "https://github.com/jimmc414/claude-code-plugin-marketplace/tree/main/plugins/problem-solving",
+  "repository": "https://github.com/jimmc414/claude-code-plugin-marketplace",
+  "license": "MIT",
+  "keywords": ["problem", "solution", "diagnosis", "troubleshooting", "decision-making"],
+  "category": "productivity",
+  "dependencies": {},
+  "commands": "./commands/",
+  "agents": "./agents/",
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": "./.mcp.json"
+}
