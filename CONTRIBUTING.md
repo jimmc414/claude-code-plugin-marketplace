@@ -32,7 +32,34 @@ Create and share your own plugins. See [Creating Plugins](./docs/creating-plugin
 
 Help review submitted plugins for quality and security.
 
-## Getting Started
+## Submitting Plugins
+
+### Option 1: Automated (Recommended)
+
+Use the **plugin-publisher** plugin to automatically package and submit your skills, agents, and commands:
+
+```bash
+# 1. Add the marketplace
+/plugin marketplace add jimmc414/claude-code-plugin-marketplace
+
+# 2. Install the publisher plugin
+/plugin install plugin-publisher@jimmc414
+
+# 3. Tell Claude what you want to share
+"I want to share my deployment tools with the community"
+```
+
+Claude will:
+1. Scan your `~/.claude/` for skills, agents, commands, and hooks
+2. Let you select which components to include
+3. Package them into a properly structured plugin
+4. Submit a PR to the marketplace automatically
+
+**No cloning required!** This is the easiest way to contribute.
+
+### Option 2: Manual
+
+For more control, or to contribute improvements to existing plugins:
 
 1. **Fork the Repository**
 
@@ -41,8 +68,8 @@ Help review submitted plugins for quality and security.
 2. **Clone Your Fork**
 
    ```bash
-   git clone https://github.com/your-username/claude-code-marketplace.git
-   cd claude-code-marketplace
+   git clone https://github.com/your-username/claude-code-plugin-marketplace.git
+   cd claude-code-plugin-marketplace
    ```
 
 3. **Create a Branch**
@@ -51,34 +78,36 @@ Help review submitted plugins for quality and security.
    git checkout -b feature/my-contribution
    ```
 
-4. **Make Changes**
-
-   Edit files, add plugins, improve code.
-
-5. **Test Changes**
+4. **Create or Edit Plugins**
 
    ```bash
-   # Validate all plugins
-   python tools/validate.py --all
+   # Scaffold a new plugin
+   python tools/scaffold.py plugin my-plugin --description "My plugin"
 
-   # Check JSON syntax
-   find . -name "*.json" -exec python -m json.tool {} \; > /dev/null
+   # Add components
+   python tools/scaffold.py command my-cmd --plugin my-plugin
+   python tools/scaffold.py skill my-skill --plugin my-plugin
+   python tools/scaffold.py agent my-agent --plugin my-plugin
    ```
 
-6. **Commit Changes**
+5. **Validate**
+
+   ```bash
+   python tools/validate.py my-plugin    # Single plugin
+   python tools/validate.py --all        # All plugins
+   ```
+
+6. **Commit and Push**
 
    ```bash
    git add .
-   git commit -m "Description of changes"
-   ```
-
-7. **Push and Create PR**
-
-   ```bash
+   git commit -m "Add my-plugin: description of what it does"
    git push origin feature/my-contribution
    ```
 
-   Then open a Pull Request on GitHub.
+7. **Create Pull Request**
+
+   Open a PR on GitHub. The catalog will auto-update when merged.
 
 ## Code Standards
 
