@@ -1,0 +1,15 @@
+{
+  "name": "collaborative-spec-builder",
+  "version": "1.0.0",
+  "description": "Collaborative specification building with iterative Q&A before implementation",
+  "author": {
+    "name": "jimmc414"
+  },
+  "homepage": "https://github.com/jimmc414/claude-code-plugin-marketplace/tree/main/plugins/collaborative-spec-builder",
+  "repository": "https://github.com/jimmc414/claude-code-plugin-marketplace",
+  "license": "MIT",
+  "keywords": ["specification", "planning", "requirements", "documentation", "qa"],
+  "category": "development",
+  "dependencies": {},
+  "commands": "./commands/"
+}

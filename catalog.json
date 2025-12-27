@@ -1,40 +1,9 @@
 {
-  "generated_at": "2025-12-20T04:28:39.266687Z",
+  "generated_at": "2025-12-27T09:00:41.088528Z",
   "marketplace_name": "community-claude-plugins",
-  "total_plugins": 10,
+  "total_plugins": 12,
   "verified_plugins": 0,
   "plugins": [
-    {
-      "name": "norvig-patterns",
-      "version": "1.0.0",
-      "description": "54 elegant coding patterns derived from Peter Norvig's pytudes. Guides Claude to write cleaner, more Pythonic code using proven patterns for algorithms, data structures, testing, and code structure.",
-      "author": "jimmc414",
-      "category": "coding-patterns",
-      "keywords": [
-        "python",
-        "patterns",
-        "algorithms",
-        "best-practices",
-        "norvig",
-        "pytudes",
-        "coding-style",
-        "clean-code",
-        "data-structures",
-        "testing",
-        "refactoring"
-      ],
-      "components": {
-        "commands": 0,
-        "agents": 0,
-        "skills": 54,
-        "hooks": false,
-        "mcp_servers": 0
-      },
-      "install_command": "/plugin install norvig-patterns@community-claude-plugins",
-      "source_url": "./plugins/norvig-patterns",
-      "dependencies": {},
-      "verified": false
-    },
     {
       "name": "adversarial-testing",
       "version": "1.0.0",
@@ -58,6 +27,57 @@
       },
       "install_command": "/plugin install adversarial-testing@community-claude-plugins",
       "source_url": "./plugins/adversarial-testing",
+      "dependencies": {},
+      "verified": false
+    },
+    {
+      "name": "collaborative-planning",
+      "version": "1.0.0",
+      "description": "Collaborative planning commands with iterative requirements gathering. Ensures thorough understanding before implementation through structured Q&A sessions.",
+      "author": "jimmc414",
+      "category": "productivity",
+      "keywords": [
+        "planning",
+        "collaboration",
+        "requirements",
+        "disambiguation",
+        "iterative",
+        "q&a"
+      ],
+      "components": {
+        "commands": 2,
+        "agents": 0,
+        "skills": 0,
+        "hooks": false,
+        "mcp_servers": 0
+      },
+      "install_command": "/plugin install collaborative-planning@community-claude-plugins",
+      "source_url": "./plugins/collaborative-planning",
+      "dependencies": {},
+      "verified": false
+    },
+    {
+      "name": "collaborative-spec-builder",
+      "version": "1.0.0",
+      "description": "Collaborative specification building with iterative Q&A before implementation",
+      "author": "jimmc414",
+      "category": "development",
+      "keywords": [
+        "specification",
+        "planning",
+        "requirements",
+        "documentation",
+        "qa"
+      ],
+      "components": {
+        "commands": 2,
+        "agents": 0,
+        "skills": 0,
+        "hooks": false,
+        "mcp_servers": 0
+      },
+      "install_command": "/plugin install collaborative-spec-builder@community-claude-plugins",
+      "source_url": "./plugins/collaborative-spec-builder",
       "dependencies": {},
       "verified": false
     },
@@ -163,6 +183,37 @@
       },
       "install_command": "/plugin install local-llm@community-claude-plugins",
       "source_url": "./plugins/local-llm",
+      "dependencies": {},
+      "verified": false
+    },
+    {
+      "name": "norvig-patterns",
+      "version": "1.0.0",
+      "description": "54 elegant coding patterns derived from Peter Norvig's pytudes. Guides Claude to write cleaner, more Pythonic code using proven patterns for algorithms, data structures, testing, and code structure.",
+      "author": "jimmc414",
+      "category": "utilities",
+      "keywords": [
+        "python",
+        "patterns",
+        "algorithms",
+        "best-practices",
+        "norvig",
+        "pytudes",
+        "coding-style",
+        "clean-code",
+        "data-structures",
+        "testing",
+        "refactoring"
+      ],
+      "components": {
+        "commands": 0,
+        "agents": 0,
+        "skills": 54,
+        "hooks": false,
+        "mcp_servers": 0
+      },
+      "install_command": "/plugin install norvig-patterns@community-claude-plugins",
+      "source_url": "./plugins/norvig-patterns",
       "dependencies": {},
       "verified": false
     },
@@ -273,10 +324,9 @@
   ],
   "categories": {
     "testing": 2,
-    "development": 3,
+    "productivity": 3,
+    "development": 4,
     "devops": 1,
-    "utilities": 1,
-    "productivity": 2,
-    "coding-patterns": 1
+    "utilities": 2
   }
 }

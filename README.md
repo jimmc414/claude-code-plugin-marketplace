@@ -134,6 +134,32 @@ Collaborative planning commands with iterative requirements gathering. Ensures t
 
 ---
 
+### collaborative-spec-builder
+**Category:** development | **Version:** 1.0.0
+
+Collaborative specification building with iterative Q&A before implementation. Define unambiguous specifications through structured questioning.
+
+| Type | Name | Description |
+|------|------|-------------|
+| **Command** | `/collaborative-spec-builder` | Build spec for new implementations via iterative Q&A |
+| **Command** | `/collaborative-spec-builder-existing` | Build aspirational spec for existing code, identify gaps |
+
+**Workflow (New):**
+```
+Q&A → Specification → Plan Mode → Implementation
+```
+
+**Workflow (Existing):**
+```
+Q&A → Aspirational Spec → Gap Analysis → Tasks → Implementation
+```
+
+```bash
+/plugin install collaborative-spec-builder@jimmc414
+```
+
+---
+
 ### plugin-publisher
 **Category:** utilities | **Version:** 1.0.0
 
