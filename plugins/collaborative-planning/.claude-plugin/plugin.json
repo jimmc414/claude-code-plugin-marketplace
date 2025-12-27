@@ -1,0 +1,16 @@
+{
+  "name": "collaborative-planning",
+  "version": "1.0.0",
+  "description": "Collaborative planning commands with iterative requirements gathering. Ensures thorough understanding before implementation through structured Q&A sessions.",
+  "author": {
+    "name": "jimmc414",
+    "email": "jimmc414@github.com"
+  },
+  "homepage": "https://github.com/jimmc414/claude-code-plugin-marketplace/tree/main/plugins/collaborative-planning",
+  "repository": "https://github.com/jimmc414/claude-code-plugin-marketplace",
+  "license": "MIT",
+  "keywords": ["planning", "collaboration", "requirements", "disambiguation", "iterative", "q&a"],
+  "category": "productivity",
+  "dependencies": {},
+  "commands": "./commands/"
+}
