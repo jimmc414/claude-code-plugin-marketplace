@@ -1,4 +1,5 @@
 ---
+name: dispatch-on-structure
 description: "For heterogeneous data: pattern matching on type/structure, interpreter eval loops, handling different expression types."
 ---
 

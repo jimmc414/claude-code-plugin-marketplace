@@ -1,4 +1,5 @@
 ---
+name: refactor-decompose-function
 description: "For long functions: break into smaller pieces, extract helper functions, reduce nesting, improve testability and readability."
 ---
 

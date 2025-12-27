@@ -1,4 +1,5 @@
 ---
+name: compose-small-helpers
 description: "For complex behavior: build from tiny functions, chain transformations, make code read like a pipeline of operations."
 ---
 

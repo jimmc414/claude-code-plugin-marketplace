@@ -1,4 +1,5 @@
 ---
+name: benchmark-before-optimize
 description: "For performance work: measure before changing, profile to find bottlenecks, compare before and after."
 ---
 

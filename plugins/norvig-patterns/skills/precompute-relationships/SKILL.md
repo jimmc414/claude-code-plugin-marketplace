@@ -1,4 +1,5 @@
 ---
+name: precompute-relationships
 description: "For static relationships: graph structure, grid neighbors, constraint peers. Calculate once at module load, reference throughout program."
 ---
 

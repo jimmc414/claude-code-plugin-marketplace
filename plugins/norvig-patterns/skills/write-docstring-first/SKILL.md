@@ -1,4 +1,5 @@
 ---
+name: write-docstring-first
 description: "For writing clean functions: start with docstring, iterate until code matches docstring exactly, achieve docstring-code isomorphism."
 ---
 

@@ -19,6 +19,9 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Auto-fix frontmatter issues
+        run: python tools/fix_skill_frontmatter.py || true
+
       - name: Validate all plugins
         run: python tools/validate.py --all
 

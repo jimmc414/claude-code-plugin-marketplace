@@ -1,4 +1,5 @@
 ---
+name: use-operator-module
 description: "For functional operations: named functions for operators, cleaner than lambdas for arithmetic, building interpreter environments."
 ---
 

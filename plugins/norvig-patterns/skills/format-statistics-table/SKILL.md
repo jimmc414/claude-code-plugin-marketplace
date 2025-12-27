@@ -1,4 +1,5 @@
 ---
+name: format-statistics-table
 description: "For result reporting: tabular output, aligned columns, statistics summaries, human-readable reports."
 ---
 

@@ -1,4 +1,5 @@
 ---
+name: capture-state-closure
 description: "For persistent state: closures capture outer variables, alternative to classes for simple state, factory functions that remember context."
 ---
 

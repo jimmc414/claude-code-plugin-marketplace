@@ -1,4 +1,5 @@
 ---
+name: use-comprehension-chain
 description: "For data transformation: list/dict/set comprehensions, chained filtering and mapping, creating lookup structures concisely."
 ---
 

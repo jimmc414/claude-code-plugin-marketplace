@@ -1,4 +1,5 @@
 ---
+name: cascade-type-conversion
 description: "For flexible parsing: try multiple type conversions in order, graceful fallback from specific to general types."
 ---
 

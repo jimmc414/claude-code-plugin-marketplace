@@ -1,4 +1,5 @@
 ---
+name: build-expression-tree
 description: "For symbolic computation: ASTs, mathematical expressions, code that manipulates code structure, expression transformations."
 ---
 

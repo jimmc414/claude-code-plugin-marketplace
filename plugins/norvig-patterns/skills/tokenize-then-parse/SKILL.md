@@ -1,4 +1,5 @@
 ---
+name: tokenize-then-parse
 description: "For interpreters: separate lexing from parsing, token stream to AST, structured text processing in stages."
 ---
 

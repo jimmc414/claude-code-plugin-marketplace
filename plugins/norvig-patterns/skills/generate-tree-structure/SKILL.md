@@ -1,4 +1,5 @@
 ---
+name: generate-tree-structure
 description: "For tree/maze generation: spanning trees, random mazes, graph coverage. Uses frontier-based exploration with configurable traversal order."
 ---
 

@@ -1,4 +1,5 @@
 ---
+name: test-with-examples
 description: "For example-driven development: test cases as specifications, input/output pairs, documentation through examples."
 ---
 

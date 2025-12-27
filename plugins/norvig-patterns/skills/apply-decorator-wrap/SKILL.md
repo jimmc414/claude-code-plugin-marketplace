@@ -1,4 +1,5 @@
 ---
+name: apply-decorator-wrap
 description: "For cross-cutting concerns: add behavior without modifying functions, caching, timing, logging, validation wrappers."
 ---
 

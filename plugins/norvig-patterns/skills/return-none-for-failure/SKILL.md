@@ -1,4 +1,5 @@
 ---
+name: return-none-for-failure
 description: "For graceful failure: return None or False instead of exceptions, let caller decide how to handle failure."
 ---
 

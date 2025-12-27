@@ -1,4 +1,5 @@
 ---
+name: test-structural-invariants
 description: "For data structure validation: test lengths, relationships, constraints that must hold, verify setup is correct."
 ---
 

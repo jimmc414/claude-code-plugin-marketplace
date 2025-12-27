@@ -1,4 +1,5 @@
 ---
+name: optimize-local-search
 description: "For NP-hard optimization: TSP, scheduling, assignment problems. Uses greedy construction + local improvement (2-opt, hill climbing)."
 ---
 

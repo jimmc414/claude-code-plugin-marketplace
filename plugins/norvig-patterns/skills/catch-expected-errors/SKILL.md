@@ -1,4 +1,5 @@
 ---
+name: catch-expected-errors
 description: "For iteration with errors: catch exceptions during exploration, skip invalid cases, continue to next attempt."
 ---
 

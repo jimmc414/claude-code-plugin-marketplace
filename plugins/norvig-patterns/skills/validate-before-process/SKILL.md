@@ -1,4 +1,5 @@
 ---
+name: validate-before-process
 description: "For input validation: check format and constraints before processing, fail fast with clear errors, defensive parsing."
 ---
 

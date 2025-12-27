@@ -1,4 +1,5 @@
 ---
+name: handle-edge-cases
 description: "For boundary conditions: empty collections, zero values, recursive base cases, null checks, prevent crashes at edges."
 ---
 

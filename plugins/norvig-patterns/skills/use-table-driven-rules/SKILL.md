@@ -1,4 +1,5 @@
 ---
+name: use-table-driven-rules
 description: "For rule-based systems: store rules as data, easier to add/modify than if-elif chains, simplification tables, configuration."
 ---
 

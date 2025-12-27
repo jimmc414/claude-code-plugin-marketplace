@@ -1,4 +1,5 @@
 ---
+name: count-combinations
 description: "For probability and counting: permutations, combinations, sample spaces, Monte Carlo simulation, brute-force enumeration, card/dice problems."
 ---
 

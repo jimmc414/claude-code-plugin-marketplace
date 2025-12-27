@@ -1,4 +1,5 @@
 ---
+name: use-counter-frequency
 description: "For counting and frequency: histograms, most common elements, vote tallying, neighbor counting, word frequencies, distribution analysis."
 ---
 

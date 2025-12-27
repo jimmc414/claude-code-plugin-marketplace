@@ -1,4 +1,5 @@
 ---
+name: use-lambda-inline
 description: "For inline callbacks: anonymous one-liner functions, key functions for sorting, trivial transformations as dict values."
 ---
 

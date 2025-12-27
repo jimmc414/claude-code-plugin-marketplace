@@ -1,4 +1,5 @@
 ---
+name: use-namedtuple-record
 description: "For lightweight records: immutable data with named fields, hashable structures for sets/dicts, self-documenting tuple alternatives."
 ---
 

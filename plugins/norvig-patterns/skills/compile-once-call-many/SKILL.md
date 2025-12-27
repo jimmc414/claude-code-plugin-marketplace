@@ -1,4 +1,5 @@
 ---
+name: compile-once-call-many
 description: "For hot loop optimization: repeated formula evaluation, regex patterns, expression compilation. Transform string to callable once, call many times."
 ---
 

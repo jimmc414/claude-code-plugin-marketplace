@@ -1,4 +1,5 @@
 ---
+name: verify-solution-properties
 description: "For solution checking: independent verification that result is correct, separate from how it was computed."
 ---
 

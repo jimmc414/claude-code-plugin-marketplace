@@ -1,4 +1,5 @@
 ---
+name: cache-recursive-calls
 description: "For dynamic programming: overlapping subproblems, recursive solutions with repeated computations, memoization to avoid redundant work."
 ---
 

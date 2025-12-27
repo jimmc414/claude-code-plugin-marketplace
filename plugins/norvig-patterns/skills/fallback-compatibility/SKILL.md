@@ -1,4 +1,5 @@
 ---
+name: fallback-compatibility
 description: "For cross-version support: try/except imports, optional dependencies, graceful degradation across Python versions."
 ---
 

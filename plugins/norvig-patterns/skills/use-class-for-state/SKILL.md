@@ -1,4 +1,5 @@
 ---
+name: use-class-for-state
 description: "For complex state: encapsulate multiple interacting variables, stateful algorithms, backtracking search state."
 ---
 

@@ -1,4 +1,5 @@
 ---
+name: find-shortest-path
 description: "For pathfinding and search: shortest path, maze solving, game AI, route planning, graph traversal, BFS/DFS, Dijkstra, A* problems."
 ---
 

@@ -1,4 +1,5 @@
 ---
+name: intern-symbols-identity
 description: "For fast comparison: ensure only one instance of each symbol, use 'is' instead of '==', symbol tables for interpreters."
 ---
 

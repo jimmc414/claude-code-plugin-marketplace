@@ -1,4 +1,5 @@
 ---
+name: use-defaultdict-groups
 description: "For grouping and auto-initialization: adjacency lists, grouping by key, multi-maps, nested structures without KeyError handling."
 ---
 

@@ -1,4 +1,5 @@
 ---
+name: propagate-then-search
 description: "For constraint problems: eliminate impossibilities before guessing, reduce search space through inference, fail fast on contradictions."
 ---
 

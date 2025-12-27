@@ -1,4 +1,5 @@
 ---
+name: overload-operators-dsl
 description: "For domain-specific languages: operator overloading, make Python look like math/domain notation, expression builders."
 ---
 

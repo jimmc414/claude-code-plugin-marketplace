@@ -1,4 +1,5 @@
 ---
+name: solve-grid-maze
 description: "For 2D grid problems: mazes, board games, tile maps, pixel grids, coordinate systems, cellular automata, flood fill. Uses dict-based Grid class pattern."
 ---
 

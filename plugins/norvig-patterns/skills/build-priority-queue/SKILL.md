@@ -1,4 +1,5 @@
 ---
+name: build-priority-queue
 description: "For ordered processing: A* search, Dijkstra, event simulation, task scheduling. Efficient min/max extraction with heap-based queue."
 ---
 

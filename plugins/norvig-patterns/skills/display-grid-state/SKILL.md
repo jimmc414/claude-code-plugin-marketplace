@@ -1,4 +1,5 @@
 ---
+name: display-grid-state
 description: "For 2D debugging: visualize grid/board state, show puzzle progress, make algorithm behavior visible."
 ---
 

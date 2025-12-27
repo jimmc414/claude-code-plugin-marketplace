@@ -1,4 +1,5 @@
 ---
+name: match-stable-pairs
 description: "For two-sided matching: hospital-resident, stable marriage, college admissions. Gale-Shapley algorithm for stable matching with preferences."
 ---
 

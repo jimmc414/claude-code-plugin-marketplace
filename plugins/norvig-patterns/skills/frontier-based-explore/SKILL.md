@@ -1,4 +1,5 @@
 ---
+name: frontier-based-explore
 description: "For graph exploration: frontier collection with configurable pop order, BFS/DFS/random via strategy change."
 ---
 

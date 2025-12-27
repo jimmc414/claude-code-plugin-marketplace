@@ -1,4 +1,5 @@
 ---
+name: verify-with-inline-tests
 description: "For test co-location: tests in same file as code, run with main, tests as documentation and examples."
 ---
 

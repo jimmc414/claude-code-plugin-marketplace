@@ -1,4 +1,5 @@
 ---
+name: time-and-report
 description: "For performance reporting: timing wrappers, throughput calculations, profiling summaries."
 ---
 

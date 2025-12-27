@@ -1,4 +1,5 @@
 ---
+name: pass-function-as-arg
 description: "For generic algorithms: strategy pattern, callbacks, configurable behavior. Pass functions as parameters to customize algorithm behavior."
 ---
 

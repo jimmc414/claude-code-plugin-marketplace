@@ -1,4 +1,5 @@
 ---
+name: solve-constraint-puzzle
 description: "For constraint satisfaction: Sudoku, scheduling, N-queens, logic puzzles, SAT-like problems, assignment problems. Uses propagate-then-search pattern."
 ---
 

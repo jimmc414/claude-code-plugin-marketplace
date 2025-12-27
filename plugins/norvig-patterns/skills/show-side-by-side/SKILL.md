@@ -1,4 +1,5 @@
 ---
+name: show-side-by-side
 description: "For comparison: display before/after, multiple solutions, diffs side by side for visual comparison."
 ---
 

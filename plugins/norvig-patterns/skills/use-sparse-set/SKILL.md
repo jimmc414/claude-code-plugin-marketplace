@@ -1,4 +1,5 @@
 ---
+name: use-sparse-set
 description: "For sparse data: infinite grids, large spaces with few active elements, membership testing, set operations on coordinates or states."
 ---
 

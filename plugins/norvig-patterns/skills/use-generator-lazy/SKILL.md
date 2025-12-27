@@ -1,4 +1,5 @@
 ---
+name: use-generator-lazy
 description: "For memory efficiency: large sequences, infinite streams, early termination possible, pipeline processing without materializing all data."
 ---
 

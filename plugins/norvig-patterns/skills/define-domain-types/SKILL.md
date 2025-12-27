@@ -1,4 +1,5 @@
 ---
+name: define-domain-types
 description: "For new modules: define type aliases as vocabulary, make code self-documenting, create domain-specific language feel."
 ---
 

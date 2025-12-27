@@ -1,4 +1,5 @@
 ---
+name: find-convex-hull
 description: "For computational geometry: convex hull, point enclosure, polygon operations. Uses monotone chain algorithm with stack-based turn detection."
 ---
 

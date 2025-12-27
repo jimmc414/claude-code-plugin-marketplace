@@ -1,4 +1,5 @@
 ---
+name: parse-extract-input
 description: "For text processing: extract numbers, words, structured data from messy text using regex patterns, parsing utilities."
 ---
 

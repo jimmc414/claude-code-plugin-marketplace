@@ -134,7 +134,9 @@ cp ~/.claude/skills/<skill-name>/SKILL.md "$PLUGIN_DIR/skills/<skill-name>/"
 Apply transformations:
 - Replace hardcoded paths with relative or `~`
 - Remove local-specific configurations
-- Ensure frontmatter is complete
+- **CRITICAL: Ensure frontmatter has both `name` and `description` fields**
+  - If `name:` is missing, add it as the first field using the skill directory name
+  - Example: For skill in `my-skill/SKILL.md`, add `name: my-skill`
 
 **For each Agent:**
 ```bash
@@ -227,9 +229,16 @@ Create a comprehensive README.md:
 MIT
 ```
 
-### Step 8: Validate Plugin
+### Step 8: Fix and Validate Plugin
 
-Run validation if tools are available:
+First, auto-fix common frontmatter issues:
+
+```bash
+# Auto-fix missing name fields in SKILL.md files
+python tools/fix_skill_frontmatter.py --plugin <plugin-name> || true
+```
+
+Then run validation:
 
 ```bash
 # If in marketplace with tools

@@ -1,4 +1,5 @@
 ---
+name: iterate-with-itertools
 description: "For combinatorial iteration: permutations, combinations, cartesian products, without storing all results in memory."
 ---
 

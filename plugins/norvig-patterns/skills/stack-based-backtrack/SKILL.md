@@ -1,4 +1,5 @@
 ---
+name: stack-based-backtrack
 description: "For search with undo: explicit decision stack, backtracking when paths fail, depth-first exploration with state restoration."
 ---
 
