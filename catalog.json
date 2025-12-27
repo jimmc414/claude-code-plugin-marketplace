@@ -1,7 +1,7 @@
 {
-  "generated_at": "2025-12-27T09:00:41.088528Z",
+  "generated_at": "2025-12-27T09:05:08.176788Z",
   "marketplace_name": "community-claude-plugins",
-  "total_plugins": 12,
+  "total_plugins": 11,
   "verified_plugins": 0,
   "plugins": [
     {
@@ -132,30 +132,6 @@
       },
       "install_command": "/plugin install error-therapist@community-claude-plugins",
       "source_url": "./plugins/error-therapist",
-      "dependencies": {},
-      "verified": false
-    },
-    {
-      "name": "example-deployment",
-      "version": "1.0.0",
-      "description": "Deployment automation tools for common platforms",
-      "author": "Marketplace Team",
-      "category": "devops",
-      "keywords": [
-        "deploy",
-        "ci-cd",
-        "docker",
-        "kubernetes"
-      ],
-      "components": {
-        "commands": 2,
-        "agents": 1,
-        "skills": 1,
-        "hooks": true,
-        "mcp_servers": 0
-      },
-      "install_command": "/plugin install example-deployment@community-claude-plugins",
-      "source_url": "./plugins/example-deployment",
       "dependencies": {},
       "verified": false
     },
@@ -326,7 +302,6 @@
     "testing": 2,
     "productivity": 3,
     "development": 4,
-    "devops": 1,
     "utilities": 2
   }
 }

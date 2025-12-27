@@ -4,48 +4,40 @@ A community-maintained marketplace for Claude Code plugins, skills, agents, and 
 
 ## Quick Start
 
-### Add the Marketplace
-
 ```bash
+# Add the marketplace
 /plugin marketplace add jimmc414/claude-code-plugin-marketplace
-```
 
-### Browse Available Plugins
-
-```bash
-# List all available plugins
-/plugin search
-
-# Or view the catalog
-/plugin list
-```
-
-### Install a Plugin
-
-```bash
-# Install a single plugin
-/plugin install thought-exploration@jimmc414
-
-# Install multiple plugins at once
-/plugin install thought-exploration@jimmc414 problem-solving@jimmc414 norvig-patterns@jimmc414
-```
-
-### Verify Installation
-
-```bash
-/plugin list
+# Install a plugin
+/plugin install <plugin-name>@jimmc414
 ```
 
 ---
 
-## Available Plugins
+## Available Plugins (11)
+
+| Plugin | Category | Description |
+|--------|----------|-------------|
+| [norvig-patterns](#norvig-patterns) | development | 54 elegant coding patterns from Peter Norvig's pytudes |
+| [thought-exploration](#thought-exploration) | productivity | Clarify thoughts via Socratic dialogue |
+| [problem-solving](#problem-solving) | productivity | Problem diagnosis and solution generation workflow |
+| [collaborative-planning](#collaborative-planning) | productivity | Iterative Q&A planning before implementation |
+| [collaborative-spec-builder](#collaborative-spec-builder) | development | Build specifications through structured questioning |
+| [plugin-publisher](#plugin-publisher) | utilities | Extract and publish local skills to marketplaces |
+| [parallel-workflows](#parallel-workflows) | development | Git worktree orchestration for concurrent sessions |
+| [local-llm](#local-llm) | development | Manage local Ollama LLM models |
+| [adversarial-testing](#adversarial-testing) | testing | Find real bugs with adversarial test generation |
+| [doc-linter](#doc-linter) | testing | Validate docs by simulating a zero-knowledge developer |
+| [error-therapist](#error-therapist) | development | Rewrite cryptic error messages to be helpful |
+
+---
+
+## Plugin Details
 
 ### norvig-patterns
-**Category:** coding-patterns | **Version:** 1.0.0
+**Category:** development | **Version:** 1.0.0
 
 54 elegant coding patterns derived from Peter Norvig's pytudes repository. Automatically guides Claude to write cleaner, more Pythonic code.
-
-**54 Skills across 11 Categories:**
 
 | Category | Skills | Examples |
 |----------|--------|----------|
@@ -60,8 +52,6 @@ A community-maintained marketplace for Claude Code plugins, skills, agents, and 
 | Error Handling | 4 | `handle-edge-cases`, `return-none-for-failure`, `catch-expected-errors` |
 | Visualization | 4 | `display-grid-state`, `format-statistics-table`, `time-and-report` |
 | State Machines | 3 | `use-class-for-state`, `stack-based-backtrack`, `frontier-based-explore` |
-
-**How it works:** Claude automatically matches your task against skill descriptions and applies relevant patterns.
 
 ```bash
 /plugin install norvig-patterns@jimmc414
@@ -80,11 +70,6 @@ Structured thinking workflows for clarifying thoughts and challenging assumption
 | **Command** | `/challenge-thoughts` | Socratic examination to stress-test your thinking |
 | **Agent** | `explore-thinking` | Orchestrates the full thought exploration workflow |
 
-**Workflow:**
-```
-Raw thoughts → Clarification → Socratic Challenge → Refined understanding
-```
-
 ```bash
 /plugin install thought-exploration@jimmc414
 ```
@@ -102,11 +87,6 @@ Problem diagnosis and solution generation workflow. Separates problem clarificat
 | **Command** | `/solve-problem` | Generate solutions for a well-defined problem |
 | **Agent** | `solve-issue` | Guides through problem clarification and solution generation |
 
-**Workflow:**
-```
-Vague problem → Clarification → Well-defined problem → Solution generation → Recommendations
-```
-
 ```bash
 /plugin install problem-solving@jimmc414
 ```
@@ -116,17 +96,12 @@ Vague problem → Clarification → Well-defined problem → Solution generation
 ### collaborative-planning
 **Category:** productivity | **Version:** 1.0.0
 
-Collaborative planning commands with iterative requirements gathering. Ensures thorough understanding before implementation through structured Q&A sessions.
+Collaborative planning commands with iterative requirements gathering through structured Q&A sessions.
 
 | Type | Name | Description |
 |------|------|-------------|
 | **Command** | `/collaborative-plan` | Simple iterative Q&A planning - you decide when ready |
 | **Command** | `/disambiguate-plan` | Thorough disambiguation - resolves all ambiguity before proceeding |
-
-**Key Features:**
-- Iterative Q&A using AskUserQuestion tool
-- Automatic transition to plan mode when ready
-- `/disambiguate-plan` ensures zero ambiguity before planning
 
 ```bash
 /plugin install collaborative-planning@jimmc414
@@ -144,16 +119,6 @@ Collaborative specification building with iterative Q&A before implementation. D
 | **Command** | `/collaborative-spec-builder` | Build spec for new implementations via iterative Q&A |
 | **Command** | `/collaborative-spec-builder-existing` | Build aspirational spec for existing code, identify gaps |
 
-**Workflow (New):**
-```
-Q&A → Specification → Plan Mode → Implementation
-```
-
-**Workflow (Existing):**
-```
-Q&A → Aspirational Spec → Gap Analysis → Tasks → Implementation
-```
-
 ```bash
 /plugin install collaborative-spec-builder@jimmc414
 ```
@@ -167,15 +132,10 @@ Extract local skills, agents, and hooks and publish them to plugin marketplaces 
 
 | Type | Name | Description |
 |------|------|-------------|
-| **Skill** | `plugin-publishing` | Knowledge layer for Claude Code paths, plugin formats, marketplace requirements |
-| **Agent** | `plugin-scanner` | Scans local installation to inventory all skills, agents, commands, hooks |
-| **Agent** | `plugin-packager` | Creates plugin structure from selected components, generates metadata |
-| **Agent** | `plugin-submitter` | Handles GitHub fork/branch/PR workflow to submit to marketplaces |
-
-**Workflow:**
-```
-Scan Installation → Select Components → Package Plugin → Submit PR
-```
+| **Skill** | `plugin-publishing` | Knowledge layer for Claude Code paths, plugin formats |
+| **Agent** | `plugin-scanner` | Scans local installation to inventory components |
+| **Agent** | `plugin-packager` | Creates plugin structure from selected components |
+| **Agent** | `plugin-submitter` | Handles GitHub fork/branch/PR workflow |
 
 ```bash
 /plugin install plugin-publisher@jimmc414
@@ -190,12 +150,12 @@ Parallel workflow orchestration using git worktrees for concurrent Claude Code s
 
 | Type | Name | Description |
 |------|------|-------------|
-| **Skill** | `parallel-orchestrator` | Manage parallel workstreams, analyze work items, coordinate workers |
-| **Skill** | `parallel-worker` | Execute focused tasks in a worktree, make checkpoint commits |
-| **Skill** | `parallel-retrospective` | Analyze completed workflows, identify lessons learned |
-| **Agent** | `parallel-setup` | Create worktrees and launch scripts for parallel work |
-| **Agent** | `parallel-monitor` | Check worker status, detect stalls, find blocked workers |
-| **Agent** | `parallel-integrate` | Merge branches, resolve conflicts, finalize integration |
+| **Skill** | `parallel-orchestrator` | Manage parallel workstreams, coordinate workers |
+| **Skill** | `parallel-worker` | Execute focused tasks in a worktree |
+| **Skill** | `parallel-retrospective` | Analyze completed workflows, identify lessons |
+| **Agent** | `parallel-setup` | Create worktrees and launch scripts |
+| **Agent** | `parallel-monitor` | Check worker status, detect stalls |
+| **Agent** | `parallel-integrate` | Merge branches, resolve conflicts |
 
 ```bash
 /plugin install parallel-workflows@jimmc414
@@ -210,8 +170,8 @@ Manage local Ollama LLM models for development and testing.
 
 | Type | Name | Description |
 |------|------|-------------|
-| **Skill** | `local-llm` | Comprehensive Ollama management - models, VRAM, Modelfiles, API integration |
-| **Agent** | `llm-setup` | Auto-detect hardware, install Ollama, recommend and pull models |
+| **Skill** | `local-llm` | Comprehensive Ollama management - models, VRAM, API |
+| **Agent** | `llm-setup` | Auto-detect hardware, install Ollama, recommend models |
 
 **Includes:** 5 ready-to-use Modelfile templates (fast, reasoning, code-generation, json-output, analysis)
 
@@ -224,21 +184,15 @@ Manage local Ollama LLM models for development and testing.
 ### adversarial-testing
 **Category:** testing | **Version:** 1.0.0
 
-Adversarial test generation that finds real bugs by inverting the reward structure. Instead of rewarding passing tests, rewards tests that fail (and prove a bug exists).
+Adversarial test generation that finds real bugs by inverting the reward structure.
 
 | Type | Name | Description |
 |------|------|-------------|
-| **Skill** | `adversarial-analysis` | Calculate realism bounds (3-sigma), extract contracts, identify vulnerability surfaces |
-| **Skill** | `adversarial-patterns` | Library of attack vectors + anti-patterns to reject (gaming detection) |
-| **Agent** | `adversarial-orchestrator` | Coordinates workflow, max 3 iterations, parses validator results |
-| **Agent** | `adversarial-generator` | Creates candidate tests with documented hypotheses |
+| **Skill** | `adversarial-analysis` | Calculate realism bounds, extract contracts |
+| **Skill** | `adversarial-patterns` | Library of attack vectors + anti-patterns |
+| **Agent** | `adversarial-orchestrator` | Coordinates workflow, max 3 iterations |
+| **Agent** | `adversarial-generator` | Creates candidate tests with hypotheses |
 | **Agent** | `adversarial-validator` | 4-phase quality gate: static → dynamic → oracle → mutation |
-
-**Key Features:**
-- 3-sigma constraint prevents reward hacking with extreme inputs
-- Oracle verification ensures failing tests reveal real bugs
-- Mutation testing validates passing tests are strong enough
-- Subtle gaming detection (ghost imports, dead asserts, tautologies)
 
 ```bash
 /plugin install adversarial-testing@jimmc414
@@ -249,18 +203,12 @@ Adversarial test generation that finds real bugs by inverting the reward structu
 ### doc-linter
 **Category:** testing | **Version:** 1.0.0
 
-Validate documentation by simulating a developer with zero project knowledge. Catches documentation rot before it frustrates new team members.
+Validate documentation by simulating a developer with zero project knowledge.
 
 | Type | Name | Description |
 |------|------|-------------|
-| **Skill** | `documentation-testing` | Heuristics for identifying incomplete or broken documentation |
-| **Agent** | `new-hire` | Blindfolded validator that can only read docs, not source code |
-
-**Key Features:**
-- Agent is forbidden from reading source code (can't cheat)
-- Executes setup steps exactly as written
-- Reports failures as documentation bugs, not code bugs
-- Perfect for CI/CD documentation validation
+| **Skill** | `documentation-testing` | Heuristics for identifying broken documentation |
+| **Agent** | `new-hire` | Blindfolded validator that can only read docs, not source |
 
 ```bash
 /plugin install doc-linter@jimmc414
@@ -271,18 +219,12 @@ Validate documentation by simulating a developer with zero project knowledge. Ca
 ### error-therapist
 **Category:** development | **Version:** 1.0.0
 
-Audit and rewrite error messages to be helpful and actionable. Transforms cryptic error messages into user-friendly guidance.
+Audit and rewrite error messages to be helpful and actionable.
 
 | Type | Name | Description |
 |------|------|-------------|
-| **Skill** | `error-ux` | Principles for writing error messages that help users recover |
-| **Agent** | `therapist` | Scans code for error patterns, evaluates clarity/actionability, suggests rewrites |
-
-**Key Features:**
-- Detects error patterns across JS/TS, Python, Go, Java
-- Scores messages on Clarity, Actionability, Specificity (1-5 each)
-- Transforms jargon to plain language
-- Respects security-sensitive errors (keeps auth errors vague)
+| **Skill** | `error-ux` | Principles for writing helpful error messages |
+| **Agent** | `therapist` | Scans code for error patterns, suggests rewrites |
 
 ```bash
 /plugin install error-therapist@jimmc414
@@ -290,78 +232,23 @@ Audit and rewrite error messages to be helpful and actionable. Transforms crypti
 
 ---
 
-### example-deployment
-**Category:** devops | **Version:** 1.0.0
+## Contributing
 
-Deployment automation tools for Docker, Kubernetes, and cloud platforms.
-
-| Type | Name | Description |
-|------|------|-------------|
-| **Command** | `/deploy` | Deploy application to specified environment |
-| **Command** | `/status` | Check deployment status for an environment |
-| **Skill** | `docker-deploy` | Docker deployment automation |
-| **Agent** | `deployer` | Autonomous deployment agent for complex multi-step deployments |
-| **Hook** | `PostToolUse` | Logs deployment-related commands for audit trail |
+### The Easy Way: Use plugin-publisher
 
 ```bash
-/plugin install example-deployment@jimmc414
-```
-
----
-
-## Features
-
-This marketplace provides:
-
-- **Slash Commands**: User-invoked shortcuts (e.g., `/deploy`, `/status`)
-- **Agent Skills**: Model-invoked capabilities that Claude uses automatically
-- **Specialized Agents**: Task-focused agents for complex operations
-- **Hooks**: Event-driven automation for tool calls and prompts
-- **Import/Export Tools**: Share and reuse components across projects
-
-## Contributing Your Own Plugins
-
-### The Easy Way: Use plugin-publisher (Recommended)
-
-No cloning required! Let Claude handle packaging and PR submission:
-
-```bash
-# 1. Add the marketplace (if not already added)
-/plugin marketplace add jimmc414/claude-code-plugin-marketplace
-
-# 2. Install the publisher plugin
 /plugin install plugin-publisher@jimmc414
-
-# 3. Tell Claude what you want to share
-"I want to share my skills with the community"
+# Then tell Claude: "I want to share my skills with the community"
 ```
 
-Claude will:
-1. **Scan** your `~/.claude/` for skills, agents, commands, and hooks
-2. **Package** your selected components into a properly structured plugin
-3. **Submit** a PR to the marketplace automatically
-
-### The Manual Way: Clone and Build
-
-For more control, or to improve existing plugins:
+### The Manual Way
 
 ```bash
-# Clone the repository
 git clone https://github.com/jimmc414/claude-code-plugin-marketplace.git
 cd claude-code-plugin-marketplace
-
-# Scaffold a new plugin
 python tools/scaffold.py plugin my-plugin --description "My plugin"
-
-# Add components
-python tools/scaffold.py command my-cmd --plugin my-plugin
-python tools/scaffold.py skill my-skill --plugin my-plugin
-python tools/scaffold.py agent my-agent --plugin my-plugin
-
-# Validate
 python tools/validate.py my-plugin
-
-# Submit a PR!
+# Submit a PR
 ```
 
 See [Creating Plugins](./docs/creating-plugins.md) for the full guide.
@@ -372,7 +259,7 @@ See [Creating Plugins](./docs/creating-plugins.md) for the full guide.
 |------|-------------|
 | `scaffold.py` | Create new plugins and components |
 | `validate.py` | Validate plugin structure and syntax |
-| `export.py` | Export plugins, skills, agents, commands, or hooks |
+| `export.py` | Export plugins or individual components |
 | `import.py` | Import plugins from zip files or URLs |
 | `generate_catalog.py` | Generate the plugin catalog |
 
@@ -382,57 +269,7 @@ See [Creating Plugins](./docs/creating-plugins.md) for the full guide.
 - [Creating Plugins](./docs/creating-plugins.md) - Build your own plugins
 - [Submitting Plugins](./docs/submitting-plugins.md) - Contribute to the marketplace
 - [API Reference](./docs/api-reference.md) - Complete schema documentation
-- [Local Development](./docs/local-development.md) - Test plugins locally
-- [Security Guidelines](./docs/security.md) - Best practices for security
-
-## Plugin Structure
-
-```
-my-plugin/
-├── .claude-plugin/
-│   └── plugin.json          # Plugin metadata
-├── commands/                 # Slash commands
-│   └── my-command.md
-├── agents/                   # Specialized agents
-│   └── my-agent.md
-├── skills/                   # Agent skills
-│   └── my-skill/
-│       └── SKILL.md
-├── hooks/                    # Event hooks
-│   └── hooks.json
-├── scripts/                  # Hook scripts
-│   └── my-hook.sh
-└── README.md
-```
-
-## Contributing
-
-We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
-
-### Quick Contribution Steps
-
-**Option 1: Automated (Recommended)**
-1. Add marketplace: `/plugin marketplace add jimmc414/claude-code-plugin-marketplace`
-2. Install publisher: `/plugin install plugin-publisher@jimmc414`
-3. Tell Claude: "I want to share my skills"
-4. Follow the guided workflow
-
-**Option 2: Manual**
-1. Fork and clone the repository
-2. Create your plugin with `python tools/scaffold.py`
-3. Run validation: `python tools/validate.py --all`
-4. Submit a pull request
-
-## Verification
-
-Plugins that pass manual review receive a **verified** badge. Look for verified plugins for extra confidence.
 
 ## License
 
-This marketplace and included plugins are licensed under MIT unless otherwise specified. See [LICENSE](./LICENSE).
-
-## Links
-
-- [Claude Code Documentation](https://docs.anthropic.com/claude-code)
-- [Plugin System Guide](https://code.claude.com/docs/en/plugins)
-- [Report Issues](https://github.com/jimmc414/claude-code-plugin-marketplace/issues)
+MIT - See [LICENSE](./LICENSE)
