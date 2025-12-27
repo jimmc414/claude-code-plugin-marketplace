@@ -38,31 +38,6 @@ A community-maintained marketplace for Claude Code plugins, skills, agents, and 
 
 ---
 
-## Share Your Skills with the Community
-
-Have skills, agents, or hooks you want to share? The **plugin-publisher** plugin automates the entire contribution workflow:
-
-```bash
-# Install the publisher
-/plugin install plugin-publisher@jimmc414
-```
-
-Then just ask Claude:
-```
-"I want to share my skills with the community"
-```
-
-Claude will:
-1. **Scan** your `~/.claude/` installation for components
-2. **Package** your selected skills/agents/hooks into a plugin
-3. **Submit** a PR to the marketplace automatically
-
-No need to understand plugin structure, manifests, or GitHub workflows - it's all handled for you.
-
-See [plugin-publisher](#plugin-publisher) below for details.
-
----
-
 ## Available Plugins
 
 ### norvig-patterns
@@ -320,22 +295,29 @@ This marketplace provides:
 
 ## Contributing Your Own Plugins
 
-### The Easy Way: Use plugin-publisher
+### The Easy Way: Use plugin-publisher (Recommended)
 
-Install the plugin-publisher and let Claude do the work:
+No cloning required! Let Claude handle packaging and PR submission:
 
 ```bash
+# 1. Add the marketplace (if not already added)
+/plugin marketplace add jimmc414/claude-code-plugin-marketplace
+
+# 2. Install the publisher plugin
 /plugin install plugin-publisher@jimmc414
+
+# 3. Tell Claude what you want to share
+"I want to share my skills with the community"
 ```
 
-Then:
-```
-"Help me share my deployment tools with the community"
-```
+Claude will:
+1. **Scan** your `~/.claude/` for skills, agents, commands, and hooks
+2. **Package** your selected components into a properly structured plugin
+3. **Submit** a PR to the marketplace automatically
 
-Claude will scan your installation, package your components, and submit a PR.
+### The Manual Way: Clone and Build
 
-### The Manual Way: Use the Python Tools
+For more control, or to improve existing plugins:
 
 ```bash
 # Clone the repository
@@ -404,13 +386,14 @@ We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guideline
 ### Quick Contribution Steps
 
 **Option 1: Automated (Recommended)**
-1. Install plugin-publisher: `/plugin install plugin-publisher@jimmc414`
-2. Tell Claude: "I want to share my skills"
-3. Follow the guided workflow
+1. Add marketplace: `/plugin marketplace add jimmc414/claude-code-plugin-marketplace`
+2. Install publisher: `/plugin install plugin-publisher@jimmc414`
+3. Tell Claude: "I want to share my skills"
+4. Follow the guided workflow
 
 **Option 2: Manual**
-1. Fork the repository
-2. Create your plugin or improvement
+1. Fork and clone the repository
+2. Create your plugin with `python tools/scaffold.py`
 3. Run validation: `python tools/validate.py --all`
 4. Submit a pull request
 
