@@ -10,16 +10,30 @@ A community-maintained marketplace for Claude Code plugins, skills, agents, and 
 /plugin marketplace add jimmc414/claude-code-plugin-marketplace
 ```
 
-### Browse Plugins
+### Browse Available Plugins
 
 ```bash
-/plugin
+# List all available plugins
+/plugin search
+
+# Or view the catalog
+/plugin list
 ```
 
 ### Install a Plugin
 
 ```bash
-/plugin install parallel-workflows@community-claude-plugins
+# Install a single plugin
+/plugin install thought-exploration@jimmc414
+
+# Install multiple plugins at once
+/plugin install thought-exploration@jimmc414 problem-solving@jimmc414 norvig-patterns@jimmc414
+```
+
+### Verify Installation
+
+```bash
+/plugin list
 ```
 
 ---
@@ -30,7 +44,7 @@ Have skills, agents, or hooks you want to share? The **plugin-publisher** plugin
 
 ```bash
 # Install the publisher
-/plugin install plugin-publisher@community-claude-plugins
+/plugin install plugin-publisher@jimmc414
 ```
 
 Then just ask Claude:
@@ -75,7 +89,72 @@ See [plugin-publisher](#plugin-publisher) below for details.
 **How it works:** Claude automatically matches your task against skill descriptions and applies relevant patterns.
 
 ```bash
-/plugin install norvig-patterns@community-claude-plugins
+/plugin install norvig-patterns@jimmc414
+```
+
+---
+
+### thought-exploration
+**Category:** productivity | **Version:** 1.0.0
+
+Structured thinking workflows for clarifying thoughts and challenging assumptions through Socratic dialogue.
+
+| Type | Name | Description |
+|------|------|-------------|
+| **Command** | `/clarify-thoughts` | Transform vague ideas into clear, structured thoughts |
+| **Command** | `/challenge-thoughts` | Socratic examination to stress-test your thinking |
+| **Agent** | `explore-thinking` | Orchestrates the full thought exploration workflow |
+
+**Workflow:**
+```
+Raw thoughts → Clarification → Socratic Challenge → Refined understanding
+```
+
+```bash
+/plugin install thought-exploration@jimmc414
+```
+
+---
+
+### problem-solving
+**Category:** productivity | **Version:** 1.0.0
+
+Problem diagnosis and solution generation workflow. Separates problem clarification from solution generation for better outcomes.
+
+| Type | Name | Description |
+|------|------|-------------|
+| **Command** | `/clarify-problem` | Iteratively clarify and define the problem |
+| **Command** | `/solve-problem` | Generate solutions for a well-defined problem |
+| **Agent** | `solve-issue` | Guides through problem clarification and solution generation |
+
+**Workflow:**
+```
+Vague problem → Clarification → Well-defined problem → Solution generation → Recommendations
+```
+
+```bash
+/plugin install problem-solving@jimmc414
+```
+
+---
+
+### collaborative-planning
+**Category:** productivity | **Version:** 1.0.0
+
+Collaborative planning commands with iterative requirements gathering. Ensures thorough understanding before implementation through structured Q&A sessions.
+
+| Type | Name | Description |
+|------|------|-------------|
+| **Command** | `/collaborative-plan` | Simple iterative Q&A planning - you decide when ready |
+| **Command** | `/disambiguate-plan` | Thorough disambiguation - resolves all ambiguity before proceeding |
+
+**Key Features:**
+- Iterative Q&A using AskUserQuestion tool
+- Automatic transition to plan mode when ready
+- `/disambiguate-plan` ensures zero ambiguity before planning
+
+```bash
+/plugin install collaborative-planning@jimmc414
 ```
 
 ---
@@ -98,7 +177,7 @@ Scan Installation → Select Components → Package Plugin → Submit PR
 ```
 
 ```bash
-/plugin install plugin-publisher@community-claude-plugins
+/plugin install plugin-publisher@jimmc414
 ```
 
 ---
@@ -118,7 +197,7 @@ Parallel workflow orchestration using git worktrees for concurrent Claude Code s
 | **Agent** | `parallel-integrate` | Merge branches, resolve conflicts, finalize integration |
 
 ```bash
-/plugin install parallel-workflows@community-claude-plugins
+/plugin install parallel-workflows@jimmc414
 ```
 
 ---
@@ -136,7 +215,7 @@ Manage local Ollama LLM models for development and testing.
 **Includes:** 5 ready-to-use Modelfile templates (fast, reasoning, code-generation, json-output, analysis)
 
 ```bash
-/plugin install local-llm@community-claude-plugins
+/plugin install local-llm@jimmc414
 ```
 
 ---
@@ -161,7 +240,7 @@ Adversarial test generation that finds real bugs by inverting the reward structu
 - Subtle gaming detection (ghost imports, dead asserts, tautologies)
 
 ```bash
-/plugin install adversarial-testing@community-claude-plugins
+/plugin install adversarial-testing@jimmc414
 ```
 
 ---
@@ -183,7 +262,7 @@ Validate documentation by simulating a developer with zero project knowledge. Ca
 - Perfect for CI/CD documentation validation
 
 ```bash
-/plugin install doc-linter@community-claude-plugins
+/plugin install doc-linter@jimmc414
 ```
 
 ---
@@ -205,7 +284,7 @@ Audit and rewrite error messages to be helpful and actionable. Transforms crypti
 - Respects security-sensitive errors (keeps auth errors vague)
 
 ```bash
-/plugin install error-therapist@community-claude-plugins
+/plugin install error-therapist@jimmc414
 ```
 
 ---
@@ -224,7 +303,7 @@ Deployment automation tools for Docker, Kubernetes, and cloud platforms.
 | **Hook** | `PostToolUse` | Logs deployment-related commands for audit trail |
 
 ```bash
-/plugin install example-deployment@community-claude-plugins
+/plugin install example-deployment@jimmc414
 ```
 
 ---
@@ -246,7 +325,7 @@ This marketplace provides:
 Install the plugin-publisher and let Claude do the work:
 
 ```bash
-/plugin install plugin-publisher@community-claude-plugins
+/plugin install plugin-publisher@jimmc414
 ```
 
 Then:
@@ -325,7 +404,7 @@ We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guideline
 ### Quick Contribution Steps
 
 **Option 1: Automated (Recommended)**
-1. Install plugin-publisher: `/plugin install plugin-publisher@community-claude-plugins`
+1. Install plugin-publisher: `/plugin install plugin-publisher@jimmc414`
 2. Tell Claude: "I want to share my skills"
 3. Follow the guided workflow
 
