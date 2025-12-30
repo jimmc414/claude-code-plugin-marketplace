@@ -1,7 +1,7 @@
 {
-  "generated_at": "2025-12-30T00:35:43.894754Z",
+  "generated_at": "2025-12-30T06:25:26.455648Z",
   "marketplace_name": "community-claude-plugins",
-  "total_plugins": 11,
+  "total_plugins": 12,
   "verified_plugins": 0,
   "plugins": [
     {
@@ -78,6 +78,32 @@
       },
       "install_command": "/plugin install collaborative-spec-builder@community-claude-plugins",
       "source_url": "./plugins/collaborative-spec-builder",
+      "dependencies": {},
+      "verified": false
+    },
+    {
+      "name": "deep-research",
+      "version": "1.0.0",
+      "description": "Iterative deep research with progressive exploration and structured synthesis",
+      "author": "jimmc414",
+      "category": "productivity",
+      "keywords": [
+        "research",
+        "analysis",
+        "investigation",
+        "synthesis",
+        "citations",
+        "web-search"
+      ],
+      "components": {
+        "commands": 0,
+        "agents": 0,
+        "skills": 1,
+        "hooks": false,
+        "mcp_servers": 0
+      },
+      "install_command": "/plugin install deep-research@community-claude-plugins",
+      "source_url": "./plugins/deep-research",
       "dependencies": {},
       "verified": false
     },
@@ -300,7 +326,7 @@
   ],
   "categories": {
     "testing": 2,
-    "productivity": 3,
+    "productivity": 4,
     "development": 4,
     "utilities": 2
   }

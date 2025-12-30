@@ -1,0 +1,15 @@
+{
+  "name": "deep-research",
+  "version": "1.0.0",
+  "description": "Iterative deep research with progressive exploration and structured synthesis",
+  "author": {
+    "name": "jimmc414"
+  },
+  "homepage": "https://github.com/jimmc414/claude-code-plugin-marketplace/tree/main/plugins/deep-research",
+  "repository": "https://github.com/jimmc414/claude-code-plugin-marketplace",
+  "license": "MIT",
+  "keywords": ["research", "analysis", "investigation", "synthesis", "citations", "web-search"],
+  "category": "productivity",
+  "dependencies": {},
+  "skills": "./skills/"
+}

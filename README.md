@@ -14,7 +14,7 @@ A community-maintained marketplace for Claude Code plugins, skills, agents, and 
 
 ---
 
-## Available Plugins (11)
+## Available Plugins (12)
 
 | Plugin | Category | Description |
 |--------|----------|-------------|
@@ -23,6 +23,7 @@ A community-maintained marketplace for Claude Code plugins, skills, agents, and 
 | [problem-solving](#problem-solving) | productivity | Problem diagnosis and solution generation workflow |
 | [collaborative-planning](#collaborative-planning) | productivity | Iterative Q&A planning before implementation |
 | [collaborative-spec-builder](#collaborative-spec-builder) | development | Build specifications through structured questioning |
+| [deep-research](#deep-research) | productivity | Iterative deep research with progressive exploration |
 | [plugin-publisher](#plugin-publisher) | utilities | Extract and publish local skills to marketplaces |
 | [parallel-workflows](#parallel-workflows) | development | Git worktree orchestration for concurrent sessions |
 | [local-llm](#local-llm) | development | Manage local Ollama LLM models |
@@ -121,6 +122,30 @@ Collaborative specification building with iterative Q&A before implementation. D
 
 ```bash
 /plugin install collaborative-spec-builder@jimmc414
+```
+
+---
+
+### deep-research
+**Category:** productivity | **Version:** 1.0.0
+
+Iterative deep research with progressive exploration and structured synthesis. Inspired by OpenAI's Deep Research.
+
+| Type | Name | Description |
+|------|------|-------------|
+| **Skill** | `deep-research` | Core research methodology with iterative loops |
+
+**Workflow:**
+```
+Scope → Research Loop (depth iterations) → Gap Analysis → Synthesis → Report
+```
+
+**Parameters:** depth (1-5), breadth (2-8), focus areas
+
+**Output:** `./research/[topic]/` with findings.md, sources.md, report.md
+
+```bash
+/plugin install deep-research@jimmc414
 ```
 
 ---
