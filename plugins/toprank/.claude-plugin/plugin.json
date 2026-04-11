@@ -1,0 +1,35 @@
+{
+  "name": "toprank",
+  "version": "0.10.0",
+  "description": "SEO analysis, Google Ads management, keyword research, content optimization, and schema markup tools powered by Google Search Console and Google Ads APIs.",
+  "author": {
+    "name": "nowork-studio"
+  },
+  "homepage": "https://github.com/nowork-studio/toprank",
+  "repository": "https://github.com/nowork-studio/toprank",
+  "license": "MIT",
+  "keywords": [
+    "seo",
+    "google-ads",
+    "search-console",
+    "keyword-research",
+    "content-optimization",
+    "schema-markup"
+  ],
+  "category": "productivity",
+  "dependencies": {},
+  "mcpServers": "./.mcp.json",
+  "skills": [
+    "./google-ads/ads",
+    "./google-ads/ads-audit",
+    "./google-ads/ads-copy",
+    "./seo/seo-analysis",
+    "./seo/content-writer",
+    "./seo/keyword-research",
+    "./seo/meta-tags-optimizer",
+    "./seo/schema-markup-generator",
+    "./seo/setup-cms",
+    "./toprank-upgrade-skill",
+    "./gemini"
+  ]
+}

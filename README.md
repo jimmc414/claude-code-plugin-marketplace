@@ -14,7 +14,7 @@ A community-maintained marketplace for Claude Code plugins, skills, agents, and 
 
 ---
 
-## Available Plugins (12)
+## Available Plugins (13)
 
 | Plugin | Category | Description |
 |--------|----------|-------------|
@@ -30,6 +30,7 @@ A community-maintained marketplace for Claude Code plugins, skills, agents, and 
 | [adversarial-testing](#adversarial-testing) | testing | Find real bugs with adversarial test generation |
 | [doc-linter](#doc-linter) | testing | Validate docs by simulating a zero-knowledge developer |
 | [error-therapist](#error-therapist) | development | Rewrite cryptic error messages to be helpful |
+| [toprank](#toprank) | productivity | SEO audits, Google Ads optimization, keyword research, and schema/content workflows |
 
 ---
 
@@ -253,6 +254,33 @@ Audit and rewrite error messages to be helpful and actionable.
 
 ```bash
 /plugin install error-therapist@jimmc414
+```
+
+---
+
+### toprank
+**Category:** productivity | **Version:** 0.10.0
+
+SEO and Google Ads workflows from `nowork-studio/toprank`. Combines Search Console-informed SEO analysis, keyword research, metadata and schema optimization, Google Ads auditing, and campaign management in one plugin.
+
+| Type | Name | Description |
+|------|------|-------------|
+| **Skill** | `seo-analysis` | Full SEO audit with Search Console data, technical crawl, and a prioritized action plan |
+| **Skill** | `content-writer` | Create or improve SEO content using E-E-A-T-style guidance |
+| **Skill** | `keyword-research` | Discover keywords, classify intent, and build topic clusters |
+| **Skill** | `meta-tags-optimizer` | Rewrite titles, descriptions, and social tags for CTR and coverage |
+| **Skill** | `schema-markup-generator` | Generate JSON-LD structured data for rich results |
+| **Skill** | `setup-cms` | Connect supported CMS platforms for SEO field audits |
+| **Skill** | `ads-audit` | Audit Google Ads accounts and surface wasted spend or tracking issues |
+| **Skill** | `ads` | Manage campaigns, keywords, bids, negatives, budgets, and related settings |
+| **Skill** | `ads-copy` | Generate RSA copy and A/B variants from account context |
+| **Skill** | `gemini` | Use Gemini as a second-opinion review layer for SEO and Ads decisions |
+| **Skill** | `toprank-upgrade-skill` | Upgrade the Toprank plugin in place |
+
+**Includes:** 11 skills plus one bundled MCP server config for AdsAgent.
+
+```bash
+/plugin install toprank@jimmc414
 ```
 
 ---

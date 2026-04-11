@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-11T00:47:40.742261Z",
+  "generated_at": "2026-04-11T09:51:36.492966Z",
   "marketplace_name": "community-claude-plugins",
-  "total_plugins": 12,
+  "total_plugins": 13,
   "verified_plugins": 0,
   "plugins": [
     {
@@ -322,11 +322,37 @@
       "source_url": "./plugins/thought-exploration",
       "dependencies": {},
       "verified": false
+    },
+    {
+      "name": "toprank",
+      "version": "0.10.0",
+      "description": "SEO analysis, Google Ads management, keyword research, content optimization, and schema markup tools powered by Google Search Console and Google Ads APIs.",
+      "author": "nowork-studio",
+      "category": "productivity",
+      "keywords": [
+        "seo",
+        "google-ads",
+        "search-console",
+        "keyword-research",
+        "content-optimization",
+        "schema-markup"
+      ],
+      "components": {
+        "commands": 0,
+        "agents": 0,
+        "skills": 0,
+        "hooks": false,
+        "mcp_servers": 1
+      },
+      "install_command": "/plugin install toprank@community-claude-plugins",
+      "source_url": "./plugins/toprank",
+      "dependencies": {},
+      "verified": false
     }
   ],
   "categories": {
     "testing": 2,
-    "productivity": 4,
+    "productivity": 5,
     "development": 4,
     "utilities": 2
   }
