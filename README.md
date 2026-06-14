@@ -14,7 +14,7 @@ A community-maintained marketplace for Claude Code plugins, skills, agents, and 
 
 ---
 
-## Available Plugins (12)
+## Available Plugins (13)
 
 | Plugin | Category | Description |
 |--------|----------|-------------|
@@ -27,6 +27,7 @@ A community-maintained marketplace for Claude Code plugins, skills, agents, and 
 | [plugin-publisher](#plugin-publisher) | utilities | Extract and publish local skills to marketplaces |
 | [parallel-workflows](#parallel-workflows) | development | Git worktree orchestration for concurrent sessions |
 | [local-llm](#local-llm) | development | Manage local Ollama LLM models |
+| [xquik](#xquik) | development | X data workflows with MCP, REST APIs, webhooks, and extraction |
 | [adversarial-testing](#adversarial-testing) | testing | Find real bugs with adversarial test generation |
 | [doc-linter](#doc-linter) | testing | Validate docs by simulating a zero-knowledge developer |
 | [error-therapist](#error-therapist) | development | Rewrite cryptic error messages to be helpful |
@@ -202,6 +203,21 @@ Manage local Ollama LLM models for development and testing.
 
 ```bash
 /plugin install local-llm@jimmc414
+```
+
+---
+
+### xquik
+**Category:** development | **Version:** 1.0.0
+
+Xquik workflows for X data automation with MCP, REST APIs, webhooks, extraction, monitoring, and confirmation-gated writes.
+
+| Type | Name | Description |
+|------|------|-------------|
+| **Skill** | `xquik-x-data` | Configure Xquik MCP and REST workflows from public docs |
+
+```bash
+/plugin install xquik@jimmc414
 ```
 
 ---
