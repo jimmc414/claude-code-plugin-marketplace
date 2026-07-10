@@ -1,0 +1,15 @@
+{
+  "name": "cocoindex-code",
+  "version": "0.2.37",
+  "description": "AST/tree-sitter code search MCP server that indexes a codebase and returns compact, relevant snippets to reduce coding-agent context usage.",
+  "author": {
+    "name": "cocoindex-io"
+  },
+  "homepage": "https://github.com/cocoindex-io/cocoindex-code",
+  "repository": "https://github.com/cocoindex-io/cocoindex-code",
+  "license": "Apache-2.0",
+  "keywords": ["code-search", "mcp", "tree-sitter", "ast", "coding-agent", "context-engineering"],
+  "category": "development",
+  "dependencies": {},
+  "mcpServers": "./.mcp.json"
+}
