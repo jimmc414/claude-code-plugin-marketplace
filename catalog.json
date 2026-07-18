@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-17T11:35:53.255656Z",
+  "generated_at": "2026-07-18T02:56:44.755509Z",
   "marketplace_name": "community-claude-plugins",
-  "total_plugins": 13,
+  "total_plugins": 12,
   "verified_plugins": 0,
   "plugins": [
     {
@@ -27,32 +27,6 @@
       },
       "install_command": "/plugin install adversarial-testing@community-claude-plugins",
       "source_url": "./plugins/adversarial-testing",
-      "dependencies": {},
-      "verified": false
-    },
-    {
-      "name": "cocoindex-code",
-      "version": "0.2.37",
-      "description": "AST/tree-sitter code search MCP server that indexes a codebase and returns compact, relevant snippets to reduce coding-agent context usage.",
-      "author": "cocoindex-io",
-      "category": "development",
-      "keywords": [
-        "code-search",
-        "mcp",
-        "tree-sitter",
-        "ast",
-        "coding-agent",
-        "context-engineering"
-      ],
-      "components": {
-        "commands": 0,
-        "agents": 0,
-        "skills": 0,
-        "hooks": false,
-        "mcp_servers": 1
-      },
-      "install_command": "/plugin install cocoindex-code@community-claude-plugins",
-      "source_url": "./plugins/cocoindex-code",
       "dependencies": {},
       "verified": false
     },
@@ -352,8 +326,8 @@
   ],
   "categories": {
     "testing": 2,
-    "development": 5,
     "productivity": 4,
+    "development": 4,
     "utilities": 2
   }
 }
