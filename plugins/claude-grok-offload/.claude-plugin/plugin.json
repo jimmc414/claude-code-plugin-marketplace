@@ -1,0 +1,17 @@
+{
+  "name": "claude-grok-offload",
+  "version": "0.1.0",
+  "description": "Claude Code offload economy for Grok Build \u2014 grill/verify/impl/judge/fanout/sweep/heavy-burn",
+  "author": {
+    "name": "msju199"
+  },
+  "license": "MIT",
+  "keywords": [
+    "grok",
+    "claude-code",
+    "offload",
+    "maker-checker"
+  ],
+  "homepage": "https://github.com/msju199/claude-grok-offload",
+  "repository": "https://github.com/msju199/claude-grok-offload"
+}

@@ -1,0 +1,7 @@
+[profiles.cgo_ro]
+extends = "strict"
+read_only = [
+  "__HOME__/.claude",
+  "__HOME__/.grok/docs",
+]
+deny = ["**/.env", "**/.env.*", "**/*.pem", "**/*.key", "**/credentials*", "**/*credentials*.json"]
