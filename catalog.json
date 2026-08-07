@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-07T02:55:26.321062Z",
+  "generated_at": "2026-08-07T07:56:00.325498Z",
   "marketplace_name": "community-claude-plugins",
-  "total_plugins": 12,
+  "total_plugins": 13,
   "verified_plugins": 0,
   "plugins": [
     {
@@ -27,6 +27,30 @@
       },
       "install_command": "/plugin install adversarial-testing@community-claude-plugins",
       "source_url": "./plugins/adversarial-testing",
+      "dependencies": {},
+      "verified": false
+    },
+    {
+      "name": "claude-grok-offload",
+      "version": "0.1.0",
+      "description": "Claude Code offload economy for Grok Build \u2014 grill/verify/impl/judge/fanout/sweep/heavy-burn",
+      "author": "msju199",
+      "category": "utilities",
+      "keywords": [
+        "grok",
+        "claude-code",
+        "offload",
+        "maker-checker"
+      ],
+      "components": {
+        "commands": 9,
+        "agents": 0,
+        "skills": 0,
+        "hooks": false,
+        "mcp_servers": 0
+      },
+      "install_command": "/plugin install claude-grok-offload@community-claude-plugins",
+      "source_url": "./plugins/claude-grok-offload",
       "dependencies": {},
       "verified": false
     },
@@ -326,8 +350,8 @@
   ],
   "categories": {
     "testing": 2,
+    "utilities": 3,
     "productivity": 4,
-    "development": 4,
-    "utilities": 2
+    "development": 4
   }
 }
