@@ -1,32 +1,139 @@
 {
   "name": "community-claude-plugins",
-  "version": "1.0.0",
   "metadata": {
     "description": "Community-maintained Claude Code plugin marketplace",
-    "documentation": "https://github.com/yourname/claude-code-marketplace",
+    "documentation": "https://github.com/jimmc414/claude-code-plugin-marketplace",
     "pluginRoot": "./plugins"
   },
   "owner": {
     "name": "Claude Code Community",
     "email": "plugins@example.com",
-    "url": "https://github.com/yourname/claude-code-marketplace"
+    "url": "https://github.com/jimmc414/claude-code-plugin-marketplace"
   },
   "plugins": [
     {
-      "name": "example-deployment",
-      "source": "./plugins/example-deployment",
+      "name": "adversarial-testing",
+      "source": "./plugins/adversarial-testing",
       "version": "1.0.0",
-      "description": "Deployment automation tools for common platforms",
-      "keywords": ["deploy", "ci-cd", "docker", "automation"],
-      "category": "devops"
+      "description": "Adversarial test generation that finds real bugs by inverting the reward structure",
+      "keywords": ["testing", "adversarial", "bugs", "mutation", "quality", "pytest"],
+      "category": "testing"
+    },
+    {
+      "name": "collaborative-planning",
+      "source": "./plugins/collaborative-planning",
+      "version": "1.0.0",
+      "description": "Collaborative planning commands with iterative requirements gathering",
+      "keywords": ["planning", "collaboration", "requirements", "disambiguation", "iterative", "q&a"],
+      "category": "productivity"
+    },
+    {
+      "name": "collaborative-spec-builder",
+      "source": "./plugins/collaborative-spec-builder",
+      "version": "1.0.0",
+      "description": "Collaborative specification building with iterative Q&A before implementation",
+      "keywords": ["specification", "planning", "requirements", "documentation", "qa"],
+      "category": "development"
+    },
+    {
+      "name": "deep-research",
+      "source": "./plugins/deep-research",
+      "version": "1.0.0",
+      "description": "Iterative deep research with progressive exploration and structured synthesis",
+      "keywords": ["research", "analysis", "investigation", "synthesis", "citations", "web-search"],
+      "category": "productivity"
+    },
+    {
+      "name": "doc-linter",
+      "source": "./plugins/doc-linter",
+      "version": "1.0.0",
+      "description": "Validate documentation by simulating a developer with zero project knowledge",
+      "keywords": ["documentation", "readme", "onboarding", "setup", "testing", "validation", "linting"],
+      "category": "testing"
+    },
+    {
+      "name": "error-therapist",
+      "source": "./plugins/error-therapist",
+      "version": "1.0.0",
+      "description": "Audit and rewrite error messages to be helpful and actionable",
+      "keywords": ["errors", "ux", "messages", "user-experience", "debugging", "validation", "exceptions"],
+      "category": "development"
+    },
+    {
+      "name": "hermes-tweet",
+      "source": "./plugins/hermes-tweet",
+      "version": "0.1.12",
+      "description": "Hermes Agent X/Twitter workflows for research, listening, and guarded actions",
+      "keywords": [
+        "hermes-agent",
+        "twitter",
+        "x",
+        "social-media",
+        "social-listening",
+        "automation",
+        "research"
+      ],
+      "category": "productivity"
+    },
+    {
+      "name": "local-llm",
+      "source": "./plugins/local-llm",
+      "version": "1.0.0",
+      "description": "Manage local Ollama LLM models for development and testing",
+      "keywords": ["ollama", "llm", "local", "gpu", "vram", "modelfile", "inference"],
+      "category": "development"
+    },
+    {
+      "name": "norvig-patterns",
+      "source": "./plugins/norvig-patterns",
+      "version": "1.0.0",
+      "description": "54 elegant coding patterns from Peter Norvig's pytudes",
+      "keywords": [
+        "python",
+        "patterns",
+        "algorithms",
+        "best-practices",
+        "norvig",
+        "pytudes",
+        "coding-style",
+        "clean-code",
+        "data-structures",
+        "testing",
+        "refactoring"
+      ],
+      "category": "utilities"
+    },
+    {
+      "name": "parallel-workflows",
+      "source": "./plugins/parallel-workflows",
+      "version": "1.0.0",
+      "description": "Parallel workflow orchestration using git worktrees for concurrent Claude Code sessions",
+      "keywords": ["parallel", "worktrees", "git", "orchestration", "concurrent", "workflow"],
+      "category": "development"
+    },
+    {
+      "name": "plugin-publisher",
+      "source": "./plugins/plugin-publisher",
+      "version": "1.0.0",
+      "description": "Extract local skills, agents, and hooks and publish them to plugin marketplaces",
+      "keywords": ["publish", "export", "import", "share", "marketplace", "contribution", "packaging"],
+      "category": "utilities"
+    },
+    {
+      "name": "problem-solving",
+      "source": "./plugins/problem-solving",
+      "version": "1.0.0",
+      "description": "Problem diagnosis and solution generation workflow",
+      "keywords": ["problem", "solution", "diagnosis", "troubleshooting", "decision-making"],
+      "category": "productivity"
+    },
+    {
+      "name": "thought-exploration",
+      "source": "./plugins/thought-exploration",
+      "version": "1.0.0",
+      "description": "Thought refinement workflow with clarification and Socratic examination",
+      "keywords": ["thinking", "socratic", "clarification", "exploration", "brainstorm", "ideas"],
+      "category": "productivity"
     }
-  ],
-  "categories": [
-    "devops",
-    "development",
-    "security",
-    "testing",
-    "documentation",
-    "utilities"
   ]
 }
