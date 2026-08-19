@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-19T01:38:52.047412Z",
+  "generated_at": "2026-08-19T03:32:32.237923Z",
   "marketplace_name": "community-claude-plugins",
-  "total_plugins": 12,
+  "total_plugins": 13,
   "verified_plugins": 0,
   "plugins": [
     {
@@ -158,6 +158,33 @@
       },
       "install_command": "/plugin install error-therapist@community-claude-plugins",
       "source_url": "./plugins/error-therapist",
+      "dependencies": {},
+      "verified": false
+    },
+    {
+      "name": "hermes-tweet",
+      "version": "0.1.12",
+      "description": "Hermes Agent X/Twitter workflows for research, listening, and guarded actions",
+      "author": "Xquik-dev",
+      "category": "productivity",
+      "keywords": [
+        "hermes-agent",
+        "twitter",
+        "x",
+        "social-media",
+        "social-listening",
+        "automation",
+        "research"
+      ],
+      "components": {
+        "commands": 0,
+        "agents": 0,
+        "skills": 1,
+        "hooks": false,
+        "mcp_servers": 0
+      },
+      "install_command": "/plugin install hermes-tweet@community-claude-plugins",
+      "source_url": "./plugins/hermes-tweet",
       "dependencies": {},
       "verified": false
     },
@@ -326,7 +353,7 @@
   ],
   "categories": {
     "testing": 2,
-    "productivity": 4,
+    "productivity": 5,
     "development": 4,
     "utilities": 2
   }

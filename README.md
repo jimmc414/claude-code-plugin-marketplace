@@ -9,12 +9,12 @@ A community-maintained marketplace for Claude Code plugins, skills, agents, and 
 /plugin marketplace add jimmc414/claude-code-plugin-marketplace
 
 # Install a plugin
-/plugin install <plugin-name>@jimmc414
+/plugin install <plugin-name>@community-claude-plugins
 ```
 
 ---
 
-## Available Plugins (12)
+## Available Plugins (13)
 
 | Plugin | Category | Description |
 |--------|----------|-------------|
@@ -24,6 +24,7 @@ A community-maintained marketplace for Claude Code plugins, skills, agents, and 
 | [collaborative-planning](#collaborative-planning) | productivity | Iterative Q&A planning before implementation |
 | [collaborative-spec-builder](#collaborative-spec-builder) | development | Build specifications through structured questioning |
 | [deep-research](#deep-research) | productivity | Iterative deep research with progressive exploration |
+| [hermes-tweet](#hermes-tweet) | productivity | Hermes Agent X/Twitter workflows |
 | [plugin-publisher](#plugin-publisher) | utilities | Extract and publish local skills to marketplaces |
 | [parallel-workflows](#parallel-workflows) | development | Git worktree orchestration for concurrent sessions |
 | [local-llm](#local-llm) | development | Manage local Ollama LLM models |
@@ -55,7 +56,7 @@ A community-maintained marketplace for Claude Code plugins, skills, agents, and 
 | State Machines | 3 | `use-class-for-state`, `stack-based-backtrack`, `frontier-based-explore` |
 
 ```bash
-/plugin install norvig-patterns@jimmc414
+/plugin install norvig-patterns@community-claude-plugins
 ```
 
 ---
@@ -72,7 +73,7 @@ Structured thinking workflows for clarifying thoughts and challenging assumption
 | **Agent** | `explore-thinking` | Orchestrates the full thought exploration workflow |
 
 ```bash
-/plugin install thought-exploration@jimmc414
+/plugin install thought-exploration@community-claude-plugins
 ```
 
 ---
@@ -89,7 +90,7 @@ Problem diagnosis and solution generation workflow. Separates problem clarificat
 | **Agent** | `solve-issue` | Guides through problem clarification and solution generation |
 
 ```bash
-/plugin install problem-solving@jimmc414
+/plugin install problem-solving@community-claude-plugins
 ```
 
 ---
@@ -105,7 +106,7 @@ Collaborative planning commands with iterative requirements gathering through st
 | **Command** | `/disambiguate-plan` | Thorough disambiguation - resolves all ambiguity before proceeding |
 
 ```bash
-/plugin install collaborative-planning@jimmc414
+/plugin install collaborative-planning@community-claude-plugins
 ```
 
 ---
@@ -121,7 +122,7 @@ Collaborative specification building with iterative Q&A before implementation. D
 | **Command** | `/collaborative-spec-builder-existing` | Build aspirational spec for existing code, identify gaps |
 
 ```bash
-/plugin install collaborative-spec-builder@jimmc414
+/plugin install collaborative-spec-builder@community-claude-plugins
 ```
 
 ---
@@ -145,7 +146,40 @@ Scope → Research Loop (depth iterations) → Gap Analysis → Synthesis → Re
 **Output:** `./research/[topic]/` with findings.md, sources.md, report.md
 
 ```bash
-/plugin install deep-research@jimmc414
+/plugin install deep-research@community-claude-plugins
+```
+
+---
+
+### hermes-tweet
+**Category:** productivity | **Version:** 0.1.12
+
+Hermes Agent workflows for public X/Twitter research, social listening, and
+guarded action planning through
+[Hermes Tweet](https://github.com/Xquik-dev/hermes-tweet).
+
+| Type | Name | Description |
+|------|------|-------------|
+| **Skill** | `hermes-tweet` | Plans research, reading, and gated action workflows |
+
+```bash
+/plugin install hermes-tweet@community-claude-plugins
+hermes plugins install Xquik-dev/hermes-tweet --enable
+```
+
+Set `XQUIK_API_KEY` in the Hermes runtime without printing or committing it.
+
+Optional package fallback:
+
+```bash
+uv pip install --python ~/.hermes/hermes-agent/venv/bin/python hermes-tweet
+hermes plugins enable hermes-tweet
+```
+
+Enable live social actions only after workspace approval:
+
+```bash
+export HERMES_TWEET_ENABLE_ACTIONS=true
 ```
 
 ---
@@ -163,7 +197,7 @@ Extract local skills, agents, and hooks and publish them to plugin marketplaces 
 | **Agent** | `plugin-submitter` | Handles GitHub fork/branch/PR workflow |
 
 ```bash
-/plugin install plugin-publisher@jimmc414
+/plugin install plugin-publisher@community-claude-plugins
 ```
 
 ---
@@ -183,7 +217,7 @@ Parallel workflow orchestration using git worktrees for concurrent Claude Code s
 | **Agent** | `parallel-integrate` | Merge branches, resolve conflicts |
 
 ```bash
-/plugin install parallel-workflows@jimmc414
+/plugin install parallel-workflows@community-claude-plugins
 ```
 
 ---
@@ -201,7 +235,7 @@ Manage local Ollama LLM models for development and testing.
 **Includes:** 5 ready-to-use Modelfile templates (fast, reasoning, code-generation, json-output, analysis)
 
 ```bash
-/plugin install local-llm@jimmc414
+/plugin install local-llm@community-claude-plugins
 ```
 
 ---
@@ -220,7 +254,7 @@ Adversarial test generation that finds real bugs by inverting the reward structu
 | **Agent** | `adversarial-validator` | 4-phase quality gate: static → dynamic → oracle → mutation |
 
 ```bash
-/plugin install adversarial-testing@jimmc414
+/plugin install adversarial-testing@community-claude-plugins
 ```
 
 ---
@@ -236,7 +270,7 @@ Validate documentation by simulating a developer with zero project knowledge.
 | **Agent** | `new-hire` | Blindfolded validator that can only read docs, not source |
 
 ```bash
-/plugin install doc-linter@jimmc414
+/plugin install doc-linter@community-claude-plugins
 ```
 
 ---
@@ -252,7 +286,7 @@ Audit and rewrite error messages to be helpful and actionable.
 | **Agent** | `therapist` | Scans code for error patterns, suggests rewrites |
 
 ```bash
-/plugin install error-therapist@jimmc414
+/plugin install error-therapist@community-claude-plugins
 ```
 
 ---
@@ -262,7 +296,7 @@ Audit and rewrite error messages to be helpful and actionable.
 ### The Easy Way: Use plugin-publisher
 
 ```bash
-/plugin install plugin-publisher@jimmc414
+/plugin install plugin-publisher@community-claude-plugins
 # Then tell Claude: "I want to share my skills with the community"
 ```
 

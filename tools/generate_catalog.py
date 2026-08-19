@@ -91,6 +91,11 @@ def generate_catalog(output_path: Path = None):
     # Load marketplace data for metadata
     marketplace_data = load_marketplace_data()
     marketplace_name = marketplace_data.get("name", "community-claude-plugins")
+    marketplace_plugins = {
+        plugin.get("name"): plugin
+        for plugin in marketplace_data.get("plugins", [])
+        if isinstance(plugin, dict) and plugin.get("name")
+    }
 
     for plugin_dir in sorted(PLUGINS_DIR.iterdir()):
         if not plugin_dir.is_dir():
@@ -108,7 +113,8 @@ def generate_catalog(output_path: Path = None):
             continue
 
         plugin_name = data.get("name", plugin_dir.name)
-        category = data.get("category", "utilities")
+        marketplace_entry = marketplace_plugins.get(plugin_name, {})
+        category = marketplace_entry.get("category", data.get("category", "utilities"))
         categories[category] = categories.get(category, 0) + 1
 
         # Get author info
