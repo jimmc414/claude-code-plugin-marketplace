@@ -1,0 +1,22 @@
+{
+  "name": "xquik",
+  "version": "1.0.0",
+  "description": "Xquik workflows for X data automation with MCP, REST APIs, webhooks, extraction, monitoring, and confirmation-gated writes",
+  "author": {
+    "name": "Xquik",
+    "url": "https://github.com/Xquik-dev"
+  },
+  "homepage": "https://docs.xquik.com/mcp/overview",
+  "repository": "https://github.com/Xquik-dev/x-twitter-scraper",
+  "license": "MIT",
+  "keywords": [
+    "xquik",
+    "mcp",
+    "x-data",
+    "twitter-api",
+    "webhooks",
+    "automation"
+  ],
+  "category": "development",
+  "skills": "./skills/"
+}
