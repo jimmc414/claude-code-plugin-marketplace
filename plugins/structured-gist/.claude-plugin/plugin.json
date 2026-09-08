@@ -1,0 +1,15 @@
+{
+  "name": "structured-gist",
+  "version": "0.4.3",
+  "description": "Renders explanatory or process-recap output as a nested outline instead of a paragraph. Four-role marker ladder (concept, attribute, enumerator, explanation), a deterministic conformance linter, and two render modes for terminal vs. markdown surfaces.",
+  "author": {
+    "name": "domattioli"
+  },
+  "homepage": "https://github.com/domattioli/structured-gist",
+  "repository": "https://github.com/domattioli/structured-gist",
+  "license": "MIT",
+  "keywords": ["outline", "summarization", "documentation", "recap", "linter", "markdown"],
+  "category": "documentation",
+  "dependencies": {},
+  "skills": "./skills/"
+}

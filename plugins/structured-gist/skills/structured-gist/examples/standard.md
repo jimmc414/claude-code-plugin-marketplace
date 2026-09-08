@@ -1,0 +1,3 @@
+# Example — `nested-notes standard` (default) Source: "Explain why the load_local_skills hook was needed." Full ladder, soft cap 4, arrows carry the long clauses. ```
+- Discovery gap I. install_skills.sh = consumer-only ↪ wants a manifest DomI lacks; looks under .claude/skills/ II. harness scans ~/.claude/skills/ only ↪ registry built once at start; no hot reload - The fix A. load_local_skills.sh at SessionStart a. symlinks each skills/<name>/ b. idempotent c. fail-open B. enables 77 skills - Result I. all skills available at start
+``` Ladder: `-` concept · `I./A.` first enumerator tier · `a./b.` deeper tier · `↪` long-sentence leaf.
