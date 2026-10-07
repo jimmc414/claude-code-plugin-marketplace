@@ -1,0 +1,80 @@
+[
+  {
+    "name": "error lumped into fail",
+    "file": "skills/falsifiable-tests/scripts/mutate.py",
+    "find": "            per_test[key] = ERROR",
+    "replace": "            per_test[key] = FAIL"
+  },
+  {
+    "name": "failure classified as pass",
+    "file": "skills/falsifiable-tests/scripts/mutate.py",
+    "find": "        elif \"failure\" in tags:\n            per_test[key] = FAIL",
+    "replace": "        elif \"failure\" in tags:\n            per_test[key] = PASS"
+  },
+  {
+    "name": "absent treated as pass",
+    "file": "skills/falsifiable-tests/scripts/mutate.py",
+    "find": "run.per_test.get(t, ABSENT)",
+    "replace": "run.per_test.get(t, PASS)"
+  },
+  {
+    "name": "exit 127 treated as red",
+    "file": "skills/falsifiable-tests/scripts/mutate.py",
+    "find": "if self.returncode in (126, 127):",
+    "replace": "if self.returncode in (126,):"
+  },
+  {
+    "name": "baseline output tail dropped",
+    "file": "skills/falsifiable-tests/scripts/mutate.py",
+    "find": "        print(baseline.tail())\n        return 1\n    baseline_tests",
+    "replace": "        return 1\n    baseline_tests"
+  },
+  {
+    "name": "bytecode guard removed",
+    "file": "skills/falsifiable-tests/scripts/mutate.py",
+    "find": "PYTHONDONTWRITEBYTECODE=\"1\"",
+    "replace": "PYTHONDONTWRITEBYTECODE=\"\""
+  },
+  {
+    "name": "skips counted as tests",
+    "file": "skills/falsifiable-tests/scripts/mutate.py",
+    "find": "if v != SKIP}",
+    "replace": "if True}"
+  },
+  {
+    "name": "final run result ignored",
+    "file": "skills/falsifiable-tests/scripts/mutate.py",
+    "find": "final_ok = final.command_ran and final.suite_passed",
+    "replace": "final_ok = True"
+  },
+  {
+    "name": "restore skipped after each mutation",
+    "file": "skills/falsifiable-tests/scripts/mutate.py",
+    "find": "            finally:\n                ws.restore_all()\n\n            outcomes",
+    "replace": "            finally:\n                pass\n\n            outcomes"
+  },
+  {
+    "name": "ambiguous find accepted",
+    "file": "skills/falsifiable-tests/scripts/mutate.py",
+    "find": "elif count > 1:",
+    "replace": "elif count > 99:"
+  },
+  {
+    "name": "timed-out run classified as survived",
+    "file": "skills/falsifiable-tests/scripts/mutate.py",
+    "find": "    if run.timed_out:\n        return \"timeout\",",
+    "replace": "    if False:\n        return \"timeout\","
+  },
+  {
+    "name": "SIGTERM handler not installed",
+    "file": "skills/falsifiable-tests/scripts/mutate.py",
+    "find": "    signal.signal(signal.SIGTERM, _terminate)",
+    "replace": "    pass"
+  },
+  {
+    "name": "in-flight run not killed on SIGTERM",
+    "file": "skills/falsifiable-tests/scripts/mutate.py",
+    "find": "    def _terminate(signum, frame):\n        _kill_current_run()",
+    "replace": "    def _terminate(signum, frame):\n        pass"
+  }
+]
