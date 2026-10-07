@@ -1,0 +1,10 @@
+{
+  "name": "changelog-generator",
+  "version": "1.0.0",
+  "description": "Generate a structured Keep-a-Changelog CHANGELOG.md from git history. Zero dependencies.",
+  "author": {
+    "name": "fliptrigga13"
+  },
+  "license": "MIT",
+  "keywords": ["changelog", "git", "documentation", "release-notes"]
+}
