@@ -19,6 +19,14 @@
       "description": "Deployment automation tools for common platforms",
       "keywords": ["deploy", "ci-cd", "docker", "automation"],
       "category": "devops"
+    },
+    {
+      "name": "refyner",
+      "source": "./plugins/refyner",
+      "version": "0.1.0",
+      "description": "Companion for your Refyner second brain — research grounded in what you've saved, plus propose→confirm capture. Bundles the Refyner MCP (OAuth).",
+      "keywords": ["second-brain", "knowledge", "research", "mcp", "notes"],
+      "category": "utilities"
     }
   ],
   "categories": [
