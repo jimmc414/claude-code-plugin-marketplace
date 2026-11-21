@@ -14,7 +14,7 @@ A community-maintained marketplace for Claude Code plugins, skills, agents, and 
 
 ---
 
-## Available Plugins (12)
+## Available Plugins (13)
 
 | Plugin | Category | Description |
 |--------|----------|-------------|
@@ -30,6 +30,7 @@ A community-maintained marketplace for Claude Code plugins, skills, agents, and 
 | [adversarial-testing](#adversarial-testing) | testing | Find real bugs with adversarial test generation |
 | [doc-linter](#doc-linter) | testing | Validate docs by simulating a zero-knowledge developer |
 | [error-therapist](#error-therapist) | development | Rewrite cryptic error messages to be helpful |
+| [firecrawl](#firecrawl) | productivity | Search the web, read pages, and query Firecrawl Alexandria (official) |
 
 ---
 
@@ -254,6 +255,32 @@ Audit and rewrite error messages to be helpful and actionable.
 ```bash
 /plugin install error-therapist@jimmc414
 ```
+
+---
+
+### firecrawl
+**Category:** productivity | **Source:** [firecrawl/firecrawl-claude-plugin](https://github.com/firecrawl/firecrawl-claude-plugin)
+
+Official plugin from [Firecrawl](https://www.firecrawl.dev/?utm_source=claude-code-plugin-marketplace&utm_medium=integration). It connects Claude Code to Firecrawl's hosted MCP server to search the web, read pages, and look up structured data from Firecrawl Alexandria. The entry points at Firecrawl's own repository, so installs follow its default branch.
+
+| Type | Name | Description |
+|------|------|-------------|
+| **Skill** | `firecrawl` | Finds sources with search and reads supplied or discovered URLs |
+| **Command** | `/firecrawl:search` | Search the web and summarize the results with sources |
+| **Command** | `/firecrawl:scrape` | Read a page |
+| **Command** | `/firecrawl:map` | List pages found on a site |
+| **Command** | `/firecrawl:crawl` | Read several pages of a site and combine them |
+| **Command** | `/firecrawl:agent` | Run a cited multi-source investigation |
+| **Command** | `/firecrawl:setup` | Check the account connection |
+| **MCP Server** | `firecrawl` | Firecrawl's hosted MCP server, connected with `/mcp` |
+
+**Includes:** 18 workflow skills for research papers, developer docs, SEO audits, leads, news, and more
+
+```bash
+/plugin install firecrawl@jimmc414
+```
+
+After installing, run `/mcp` to connect your Firecrawl account. If Firecrawl is already installed from another marketplace, disable that copy first.
 
 ---
 
