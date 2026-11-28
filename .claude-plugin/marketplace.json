@@ -19,6 +19,19 @@
       "description": "Deployment automation tools for common platforms",
       "keywords": ["deploy", "ci-cd", "docker", "automation"],
       "category": "devops"
+    },
+    {
+      "name": "firecrawl",
+      "source": {
+        "source": "github",
+        "repo": "firecrawl/firecrawl-claude-plugin"
+      },
+      "description": "Official Firecrawl plugin for Claude Code: search the live web, read pages, and look up structured data from Firecrawl Alexandria.",
+      "keywords": ["web-search", "web-scraping", "research", "structured-data", "mcp", "firecrawl"],
+      "category": "productivity",
+      "author": {
+        "name": "Firecrawl"
+      }
     }
   ],
   "categories": [
